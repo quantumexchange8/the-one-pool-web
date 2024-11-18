@@ -1,0 +1,256 @@
+@use '../../utils/' as * ;
+
+/*============= TEAM CSS AREA ===============*/
+.team1-section-area {
+    position: relative;
+    z-index: 1;
+    .team-header {
+        margin-bottom: 60px;
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+    }
+    .team-slider-area {
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            list-style-type: none;
+            margin-top: 48px;
+                button {
+                    display: block;
+                    width: 8px;
+                    height:8px;
+                    border: none;
+                    border-radius: 100%;
+                    background-color: var(--ztc-bg-bg-5);
+                    opacity: 90%;
+                    text-indent: -9999px;
+                    margin: 0 24px 0 0;
+                    position: relative;
+                    z-index: 1;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 22px;
+                        width: 22px;
+                        border: 1px solid var(--ztc-bg-bg-5);
+                        left: -7px;
+                        top: -7px;
+                        border-radius: 50%;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .4s;
+                    }
+                }
+            
+                li.slick-active button {
+                    background-color: var(--ztc-bg-bg-5);
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all .4s;
+                    }
+                }
+            
+        }
+       .team-boxarea {
+        border-radius: 200px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        margin: 0 30px 0 0;
+        @media #{$xs} {
+            margin: 0;
+        }
+        &:hover {
+            .img1 {
+                border-radius: 200px;
+                transition: all .4s;
+                &::after {
+                    visibility: visible;
+                    opacity: 80%;
+                    transition: all .4s;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .social-icon {
+                top: 45%;
+                transition: all .4s;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all .4s;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100px;
+                width: 100px;
+                left: 35%;
+                top: 40%;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-5);
+                opacity: 80%;
+                border-radius: 200px;
+                visibility: hidden;
+                opacity: 0;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 200px;
+            }
+        }
+
+        .social-icon {
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            right: 20%;
+            z-index: 2;
+            transition: all .4s;
+            visibility: hidden;
+            opacity: 0;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        text-align: center;
+                        line-height: 50px;
+                        display: inline-block;
+                        transition: all .4s;
+                        border-radius: 50%;
+                        background: #779EBC;
+                        margin: 0 6px 0 0;
+                        color: var(--ztc-bg-bg-1);
+                        font-size: var(--ztc-font-size-font-s20);
+                        &:hover {
+                            background: var(--ztc-bg-bg-1);
+                            color: var(--ztc-bg-bg-5);
+                            transition: all .4s;
+                        }
+                    }
+                }
+            }
+        }
+       } 
+    }
+}
+
+// Inner Pages //
+.team-inner-section-area {
+    position: relative;
+    z-index: 1;
+    .team-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        &:hover {
+            .social-area {
+                bottom: 24px;
+                transition: all .6s;
+            }
+            .content-area {
+                background: var(--ztc-bg-bg-2);
+                transition: all .4s;
+                a {
+                    color: var(--ztc-text-text-1);
+                    transition: all .4s;
+                }
+                p {
+                    color: var(--ztc-text-text-1);
+                    transition: all .4s;
+                    opacity: 0.8;
+                }
+            }
+        }
+        .img1 {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 8px 8px 0 0;
+            }
+        }
+        .social-area {
+            background: var(--ztc-bg-bg-2);
+            border-radius: 100px;
+            padding: 16px;
+            display: inline-block;
+            position: absolute;
+            left: 23%;
+            bottom: -200px;
+            right: 23%;
+            transition: all .6s;
+            z-index: 2;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        height: 40px;
+                        width: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        display: inline-block;
+                        transition: all .4s;
+                        background: #56B5FD;
+                        border-radius: 50%;
+                        color: var(--ztc-text-text-1);
+                        margin: 0 6px  0 0;
+                        &:hover {
+                            background: var(--ztc-bg-bg-1);
+                            color: var(--ztc-text-text-2);
+                            transition: all .4s;
+                        }
+                    }
+                }
+            }
+        }
+        .content-area {
+            text-align: center;
+            background: var(--ztc-bg-bg-3);
+            padding: 24px;
+            transition: all .4s;
+            a {
+                color: var(--ztc-text-text-3);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;
+                display: inline-block;
+                transition: all .4s; 
+                padding-bottom: 12px;               
+            }
+            p {
+                color: var(--ztc-text-text-4);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s18);
+                font-style: normal;
+                font-weight: var(--ztc-weight-medium);
+                line-height: 18px; 
+                transition: all .4s;            
+            }
+        }
+    }
+}
+/*============= TEAM CSS AREA STARTS ===============*/

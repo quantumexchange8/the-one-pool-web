@@ -1,0 +1,531 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+.cta1-section-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+    .cta-main-area {
+        position: relative;
+        background: var(--ztc-text-text-2);
+        padding: 100px 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 50px 25px;
+        }
+        .cta-header {
+            position: relative;
+            z-index: 3;
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 80%;
+            }
+            .header-btn1 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-text-text-2);
+                margin-top: 24px;
+                img {
+                    filter: none;
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .header-btn1.btn2 {
+                background: none;
+                border: 2px solid var(--ztc-text-text-1);
+                color: var(--ztc-text-text-1);
+                padding: 14px;
+                margin-top: 24px;
+                margin-left: 16px;
+                @media #{$xs} {
+                    margin-left: 0;
+                }
+                img {
+                    filter: brightness(0) invert(1);
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    border: 2px solid var(--ztc-text-text-2);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+        .images2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -86px;
+            top: 0;
+            z-index: 2;
+            .img1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                z-index: 2;
+                @media #{$xs} {
+                    display: none;
+                }
+               img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+               }
+            }
+            .img2 {
+                position: absolute;
+                right: 260px;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.cta2-section-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+    .cta-main-area {
+        position: relative;
+        background-image: url(../img/bg/cta-bg1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 50px 25px;
+        }
+        .cta-header {
+            position: relative;
+            z-index: 3;
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 80%;
+            }
+            .header-btn1 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-text-text-5);
+                margin-top: 24px;
+                img {
+                    filter: none;
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+        .images2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -86px;
+            top: 0;
+            z-index: 2;
+            .img1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                z-index: 2;
+                @media #{$xs} {
+                    display: none;
+                }
+               img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+               }
+            }
+            .img2 {
+                position: absolute;
+                right: 260px;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.cta3-section-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+    .cta-main-area {
+        position: relative;
+        background: var(--ztc-text-text-8);
+        padding: 100px 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 50px 25px;
+        }
+        .cta-img2 {
+            position: absolute;
+            top: 70px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img3 {
+            position: absolute;
+            right: 100px;
+            top: 70px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img4 {
+            position: absolute;
+            bottom: 100px;
+            left: 200px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img5 {
+            position: absolute;
+            bottom: 100px;
+            right: 200px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        
+        .cta-header {
+            position: relative;
+            z-index: 3;
+            .header-btn3 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-text-text-8);
+                margin-top: 24px;
+                img {
+                    filter: none;
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .header-btn3.btn2 {
+                background: var(--ztc-text-text-9);
+                color: var(--ztc-text-text-1);
+                margin-left: 16px;
+                @media #{$xs} {
+                    margin-left: 0;
+                }
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        .images2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -86px;
+            top: 0;
+            z-index: 2;
+            .img1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                z-index: 2;
+                @media #{$xs} {
+                    display: none;
+                }
+               img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+               }
+            }
+            .img2 {
+                position: absolute;
+                right: 260px;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+// Homepage 04 //
+.cta4-section-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+    .cta-main-area {
+        position: relative;
+        background: var(--ztc-text-text-10);
+        padding: 100px 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 50px 25px;
+        }
+        .cta-img2 {
+            position: absolute;
+            top: 70px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img3 {
+            position: absolute;
+            right: 100px;
+            top: 70px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img4 {
+            position: absolute;
+            bottom: 100px;
+            left: 200px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        .cta-img5 {
+            position: absolute;
+            bottom: 100px;
+            right: 200px;
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        
+        .cta-header {
+            position: relative;
+            z-index: 3;
+            .header-btn3 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-text-text-10);
+                margin-top: 24px;
+                img {
+                    filter: none;
+                }
+                &:hover {
+                    background: var(--ztc-text-text-11);
+                    color: var(--ztc-text-text-1);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .header-btn3.btn2 {
+                background: var(--ztc-text-text-11);
+                color: var(--ztc-text-text-1);
+                margin-left: 16px;
+                @media #{$xs} {
+                    margin-left: 0;
+                }
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        .images2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -86px;
+            top: 0;
+            z-index: 2;
+            .img1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                z-index: 2;
+                @media #{$xs} {
+                    display: none;
+                }
+               img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+               }
+            }
+            .img2 {
+                position: absolute;
+                right: 260px;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+// RTL Pages //
+.cta1-section-area.rtl-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+    .cta-main-area {
+        position: relative;
+        background: var(--ztc-text-text-2);
+        padding: 100px 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 50px 25px;
+        }
+        .cta-header {
+            position: relative;
+            z-index: 3;
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 80%;
+            }
+            .header-btn1 {
+                background: var(--ztc-text-text-1);
+                color: var(--ztc-text-text-2);
+                margin-top: 24px;
+                img {
+                    filter: none;
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .header-btn1.btn2 {
+                background: none;
+                border: 2px solid var(--ztc-text-text-1);
+                color: var(--ztc-text-text-1);
+                padding: 14px;
+                margin-top: 24px;
+                margin-right: 16px;
+                @media #{$xs} {
+                    margin-right: 0;
+                }
+                img {
+                    filter: brightness(0) invert(1);
+                }
+                &:hover {
+                    background: var(--ztc-text-text-3);
+                    color: var(--ztc-text-text-1);
+                    border: 2px solid var(--ztc-text-text-2);
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+        .images2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 86px;
+            z-index: 2;
+            transform: rotateY(-180deg);
+            .img1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+                z-index: 2;
+                @media #{$xs} {
+                    display: none;
+                }
+               img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+               }
+            }
+            .img2 {
+                position: absolute;
+                left: -260px;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+/*============= CTA CSS AREA ===============*/
