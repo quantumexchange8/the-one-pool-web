@@ -30,8 +30,8 @@
                         Let us build the pool of your dreams with exceptional craftsmanship and attention to detail for a lifetime of unforgettable moments.
                     </p>
                     <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
-                        <a href="service.html" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Build A Pool</a>
-                        <a href="contact.html" class="header-btn1 btn2"><img src="assets/img/icons/logo-icon1.svg" alt=""> Discover More</a>
+                        <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Build A Pool</a>
+                        <a href="/contactus" class="header-btn1 btn2"><img src="assets/img/icons/logo-icon1.svg" alt=""> Discover More</a>
                     </div>
                     <div class="space60"></div>
                     
@@ -70,11 +70,11 @@
                             <div class="col-lg-12 col-md-6" data-aos="zoom-in" data-aos-duration="800">
                             <div class="about-boxarea">
                                 <div class="icons">
-                                <img src="assets/img/icons/about-icon1.svg" alt="">
+                                    <img src="assets/img/icons/about-icon1.svg" alt="">
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                <a href="service-single.html">Choosing Quality Why We're Your Top Pick</a>
+                                    <div style="font-size: 20px">Choosing Quality Why We're Your Top Pick</div>
                                 </div>
                             </div>
                             </div>
@@ -82,11 +82,11 @@
                             <div class="col-lg-12 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="about-boxarea">
                                 <div class="icons">
-                                <img src="assets/img/icons/about-icon2.svg" alt="">
+                                    <img src="assets/img/icons/about-icon2.svg" alt="">
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                <a href="service-single.html">Your Pool, Our Promise Reasons to Choose Us</a>
+                                    <div style="font-size: 20px">Your Pool, Our Promise Reasons to Choose Us</div>
                                 </div>
                             </div>
                             </div>
@@ -98,11 +98,11 @@
                             <div class="col-lg-12 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
                             <div class="about-boxarea box2">
                                 <div class="icons">
-                                <img src="assets/img/icons/about-icon3.svg" alt="">
+                                    <img src="assets/img/icons/about-icon3.svg" alt="">
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                <a href="service-single.html">Beyond the Surface Why Choose Our Team</a>
+                                    <div style="font-size: 20px">Beyond the Surface Why Choose Our Team</div>
                                 </div>
                             </div>
                             </div>
@@ -121,7 +121,7 @@
                             At The One Pool, we prioritize quality craftsmanship and customer satisfaction, taking pride in bringing your dream pool to life with precision and excellence.
                         </p>
                         <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
-                            <a href="about.html" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> About Us</a>
+                            <a href="/aboutus" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> About Us </a>
                             <a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play popup-youtube">
                             <span class="icon"><i class="fa-solid fa-play"></i></span>
                             <span class="text">How We Work</span>
@@ -151,7 +151,7 @@
                         </p>
                         <div class="space32"></div>
                         <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
-                            <a href="service.html" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View More Service</a>
+                            <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View More Service</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                                 <div class="space16"></div>
                                 <p>Tailored pool designs that fit the unique needs and style of the property, including shape, size, and features.</p>
                                 <div class="space24"></div>
-                                <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 
@@ -184,11 +184,11 @@
                                 <img src="assets/img/icons/service-icon1.svg" alt="">
                             </div>
                             <div class="space24"></div>
-                            <a href="service-single.html">New Pool Construction</a>
+                            <a href="service-single.html">Pool Construction</a>
                             <div class="space16"></div>
                             <p>Complete construction of new pools, including excavation, installation of plumbing and so on.</p>
                             <div class="space24"></div>
-                            <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 
@@ -205,7 +205,7 @@
                             <div class="space16"></div>
                             <p>Upgrading and modernizing existing pools with new features to improve functionality and appearance.</p>
                             <div class="space24"></div>
-                            <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -360,12 +360,12 @@
                         </div>
                         <div class="content-area">
                         <div class="icons">
-                            <a href="service-single.html"><img src="assets/img/icons/arrow1.svg" alt=""></a>
+                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
                         </div>
                         <div class="space24"></div>
                         <p>Custom Pool Design & Planning</p>
                         <div class="space16"></div>
-                        <a href="service-single.html">Crafted To Fit Your Style And Space</a>
+                        <a href="/projectdetail">Crafted To Fit Your Style And Space</a>
                         <div class="img2">
                             <img src="assets/img/elements/elements9.png" alt="">
                         </div>
@@ -378,12 +378,12 @@
                         </div>
                         <div class="content-area">
                         <div class="icons">
-                            <a href="service-single.html"><img src="assets/img/icons/arrow1.svg" alt=""></a>
+                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
                         </div>
                         <div class="space24"></div>
                         <p>New Pool Construction</p>
                         <div class="space16"></div>
-                        <a href="service-single.html">Expertly Built Pools</a>
+                        <a href="/projectdetail">Expertly Built Pools</a>
                         <div class="img2">
                             <img src="assets/img/elements/elements9.png" alt="">
                         </div>
@@ -396,12 +396,12 @@
                         </div>
                         <div class="content-area">
                         <div class="icons">
-                            <a href="service-single.html"><img src="assets/img/icons/arrow1.svg" alt=""></a>
+                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
                         </div>
                         <div class="space24"></div>
                         <p>Pool Renovation & Remodeling</p>
                         <div class="space16"></div>
-                        <a href="service-single.html">Old Pool Into A Modern Masterpiece</a>
+                        <a href="/projectdetail">Old Pool Into A Modern Masterpiece</a>
                         <div class="img2">
                             <img src="assets/img/elements/elements9.png" alt="">
                         </div>
@@ -441,40 +441,40 @@
                         <div class="row">
                         <div class="col-lg-6">
                             <div class="input-area">
-                            <input type="text" placeholder="First Name">
+                            <input id="firstname" autocomplete="off" type="text" placeholder="First Name">
                             </div>
                             <div class="space20"></div>
                         </div>
                         <div class="col-lg-6">
                             <div class="input-area">
-                            <input type="text" placeholder="Last Name">
-                            </div>
-                            <div class="space20"></div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="input-area">
-                            <input type="number" placeholder="Phone Number">
+                            <input id="lastname" autocomplete="off" type="text" placeholder="Last Name">
                             </div>
                             <div class="space20"></div>
                         </div>
 
                         <div class="col-lg-6">
                             <div class="input-area">
-                            <input type="email" placeholder="Email Address">
+                            <input id="phonenumber" autocomplete="off" type="number" placeholder="Phone Number">
+                            </div>
+                            <div class="space20"></div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-area">
+                            <input id="email" autocomplete="off" type="email" placeholder="Email Address">
                             </div>
                             <div class="space20"></div>
                         </div>
 
                         <div class="col-lg-12">
                             <div class="input-area">
-                            <select name="country"  class="nice-select">
-                                <option value="1" data-display="New York City">New York City</option>
-                                <option value="">Belgium City</option>
-                                <option value="">Brezil City</option>
-                                <option value="">Argentina City</option>
-                                <option value="">Bangladesh City</option>
-                                <option value="">Germany City</option>
+                            <select autocomplete="off" name="country"  class="nice-select">
+                                <option value="1" data-display="Kuala Lumpur">Kuala Lumpur</option>
+                                <option value="">Kuala Lumpur</option>
+                                <option value="">Selangor</option>
+                                <option value="">Penang</option>
+                                <option value="">Perak</option>
+                                <option value="">Johor</option>
                             </select>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
                         <div class="col-lg-12">
                             <div class="space32"></div>
                             <div class="input-area">
-                            <button class="header-btn1" type="submit"><img src="assets/img/icons/logo-icon1.svg" alt=""> Contact Us</button>
+                            <button class="header-btn1" type="submit"><img src="assets/img/icons/logo-icon1.svg" alt=""> Submit </button>
                             </div>
                         </div>
                         </div>

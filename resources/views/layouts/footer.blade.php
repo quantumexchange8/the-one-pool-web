@@ -21,11 +21,11 @@
         <div class="footer-header pbleft">
           <h3>Quick links</h3>
           <ul>
-            <li><a href="/home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/aboutus">About Us</a></li>
-            <li><a href="about.html">Services</a></li>
-            <li><a href="blog.html">Latest News</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -46,8 +46,8 @@
           <p>Subscribe us & receive our latest news & articles</p>
           <div class="space32"></div>
           <form>
-            <input type="text" placeholder="Email Address..">
-            <button type="submit" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Subscribe Now</button>
+            <input id="email" autocomplete="off" type="text" placeholder="Email Address..">
+            <button disabled type="submit" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Subscribe Now</button>
           </form>
         </div>
       </div>
