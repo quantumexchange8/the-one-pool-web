@@ -3106,7 +3106,7 @@ ul.pagination li a.active {
   font-style: normal;
   font-weight: var(--ztc-weight-bold);
   line-height: 20px;
-  padding-bottom: 16px;
+
 }
 .service-single-area .single-section-area .icons-list1 {
   position: relative;
@@ -4220,7 +4220,7 @@ ul.pagination li a.active {
 .mobile-header.mobile-haeder1 .mobile-logo img {
   filter: brightness(0) invert(1);
   height: 50px;
-  width: 150px;
+  width: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -7335,7 +7335,8 @@ body.homepage1-body, html {
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
   line-height: 18px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   transition: all 0.4s;
   margin: 0 40px 0 0;
 }
@@ -14139,5 +14140,70 @@ body.homepage1-body, html {
   text-decoration: none;
   cursor: pointer;
 }
+
+.fixed-image {
+  width: full;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px; 
+  padding-bottom: 8px;
+}
+
+.project-list-image {
+  width: full;
+  height: 500px;
+  object-fit: cover;
+}
+
+.project-image {
+  width: full;
+  height: 500px;
+  object-fit: cover;
+}
+
+.service-image {
+  width: full;
+  height: 500px;
+  object-fit: cover;
+}
+
+.read-more {
+  background-color: #FFF;
+  width: 200px;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.read-more-text {
+  color: black;
+}
+
+.home-service {
+  width: 526px;
+  height: 380px;
+}
+@media (max-width: 767px) {
+  .home-service {
+    width: 366px;
+    height: 277px;
+  }
+}
+
+.home-work {
+  width: 412px;
+  height: 454px;
+}
+@media (max-width: 767px) {
+  .home-work {
+    width: 366px;
+    height: 277px;
+  }
+}
+
+
+
+
 
 /*============= PROJECTS CSS AREA ===============*//*# sourceMappingURL=main.css.map */

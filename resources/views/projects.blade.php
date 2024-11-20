@@ -24,85 +24,42 @@
     <div class="blog-single-area sp1">
         <div class="container">
             <div class="row">
+                
+                <!-- Projects -->
                 <div class="col-lg-8">
                     <div class="blog1-section-area">
                         <div class="container">
                             <div class="row">
-                                
+                                @foreach ($projects as $project)
                                 <div class="col-lg-12 col-md-12">
                                     <div class="blog-boxarea">
-                                        <div class="img1 image-anime" style="height: 480px">
-                                            <img src="assets/img/projects/project1/cover.jpeg" alt="">
+                                        <div class="img1 image-anime project-list-image">
+                                        <img src="{{ asset('assets/img/projects/project' . $project->id . '/cover.jpeg') }}" alt="{{ $project->title }}">
                                         </div>
                                         <div class="content-area">
-                                        <ul>
-                                            <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> Shah Alam Expressway </a></li>
-                                            <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> 1 Jun 2024 </a></li>
-                                        </ul>
-                                        <div class="space16"></div>
-                                        <a href="/projectdetail">Pool Construction</a>
-                                        <div class="space16"></div>
-                                        <p>Designed and built a stunning, durable swimming pool tailored to the client’s vision. The project included premium materials, advanced features, and meticulous craftsmanship, completed on time and within budget.</p>
-                                        <div class="space24"></div>
-                                        <a href="/projectdetail" class="header-btn1">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <ul>
+                                                <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> {{ $project->location }} </a></li>
+                                                <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> {{ $project->date }} </a></li>
+                                            </ul>
+                                            <div class="space16"></div>
+                                            <a>{{ $project->category }}: {{ $project->client}}</a>
+                                            <div class="space16"></div>
+                                            <p>{{ Str::limit($project->description, 150, '...') }}</p>
+                                            <div class="space24"></div>
+                                            <a href="{{ route('project.details', ['id' => $project->id]) }}" class="header-btn1">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                         <div class="arrow-area">
-                                        <a href="/projectdetail"><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="{{ route('project.details', ['id' => $project->id]) }}"><i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
-                                    </div>
+                                    </div>  
                                 </div>
-                        
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="blog-boxarea">
-                                        <div class="img1 image-anime" style="height: 480px">
-                                            <img src="assets/img/projects/project2/cover.jpeg" alt="">
-                                        </div>
-                                        <div class="content-area">
-                                        <ul>
-                                            <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> Seksyen 32, Shah Alam </a></li>
-                                            <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> 25 September 2023 </a></li>
-                                        </ul>
-                                        <div class="space16"></div>
-                                        <a href="/projectdetail">Landscaping and Features</a>
-                                        <div class="space16"></div>
-                                        <p>Enhanced the pool area with bespoke landscaping and features, including decking, water features, lighting, greenery, creating a cohesive and inviting outdoor space.</p>
-                                        <div class="space24"></div>
-                                        <a href="/projectdetail" class="header-btn1">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                        <div class="arrow-area">
-                                        <a href="/projectdetail"><i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="blog-boxarea">
-                                        <div class="img1 image-anime" style="height: 480px">
-                                            <img src="assets/img/projects/project3/cover.jpeg" alt="">
-                                        </div>
-                                        <div class="content-area">
-                                        <ul>
-                                            <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> Petaling Jaya, Selangor </a></li>
-                                            <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> 15 Nov 2024 </a></li>
-                                        </ul>
-                                        <div class="space16"></div>
-                                        <a href="/projectdetail">Renovation and Upgrades</a>
-                                        <div class="space16"></div>
-                                        <p>Revitalized an aging pool with modern enhancements, including updated tiling, advanced filtration systems, and LED lighting. The upgrades improved functionality, durability, and aesthetics, transforming the pool into a stunning, contemporary space for relaxation and enjoyment.</p>
-                                        <div class="space24"></div>
-                                        <a href="/projectdetail" class="header-btn1">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                        <div class="arrow-area">
-                                        <a href="/projectdetail"><i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="space50 d-lg-none d-block"></div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Sidebar -->
                 <div class="col-lg-4">
                     <div class="service-single-author">
                         <div class="serach-area">

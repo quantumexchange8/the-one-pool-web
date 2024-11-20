@@ -86,8 +86,6 @@
                         <a href="/servicedetail">Custom Pool Design</a>
                         <div class="space16"></div>
                         <p>We bring your vision to life with personalized pool designs tailored to your preferences, space, and budget.</p>
-                        <div class="space24"></div>
-                        <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             
@@ -100,8 +98,6 @@
                         <a href="/servicedetail">Pool Construction</a>
                         <div class="space16"></div>
                         <p>From excavation to finishing touches, we handle every step of the construction process with precision and care.</p>
-                        <div class="space24"></div>
-                        <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             
@@ -114,10 +110,11 @@
                         <a href="/servicedetail">Renovation & Upgrades</a>
                         <div class="space16"></div>
                         <p>Transform your existing pool into a modern masterpiece with our renovation and remodeling services.</p>
-                        <div class="space24"></div>
-                        <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
+            </div>
+            <div class="read-more">
+                <a href="/services" class="read-more-text"> <h5>Read More <i class="fa-solid fa-arrow-right"></i> </h5></a>
             </div>
         </div>
     </div>
@@ -149,21 +146,21 @@
 
                 <div class="col-lg-6">
                     <div class="about-mission-header heading2">
-                        <h5>Our Mision Poolwash</h5>
+                        <h5>Our Mision The One Pool</h5>
                         <h2>Building Dreams, One Pool at a Time</h2>
                         <p>At The One Pool, we are committed to creating innovative and beautifully crafted pools that blend style, functionality, and quality.</p>
                         <div class="space32"></div>
-                        <h3>A Commitment to Excellence</h3>
+                        <h3>Helping Customers Achieve Their Dream Pool</h3>
                         <div class="space12"></div>
-                        <p>We deliver pools built with precision, using premium materials and cutting-edge techniques to ensure durability and superior performance.</p>
+                        <p>Our goal is to help customers own their private pool with exceptional quality and high satisfaction. Customer happiness is our top priority, and we ensure each project meets their vision and exceeds expectations.</p>
                         <div class="space32"></div>
-                        <h3>Tailored to Your Vision</h3>
+                        <h3>Sharing Expert Pool Knowledge</h3>
                         <div class="space12"></div>
-                        <p>Every project is uniquely designed to match your needs, turning your ideas into a stunning reality.</p>
+                        <p>We provide our customers with professional knowledge about pool care, construction, and maintenance, empowering them to make informed decisions for their pool’s longevity and performance.</p>
                         <div class="space32"></div>
-                        <h3>Building Relationships That Last</h3>
+                        <h3>Building Low-Maintenance Pool Systems</h3>
                         <div class="space12"></div>
-                        <p>We value trust, transparency, and customer satisfaction, fostering lasting relationships through exceptional service.</p>
+                        <p>We specialize in creating pools that are easy to maintain, allowing our customers to spend less time on upkeep and more time enjoying their pool. Our innovative systems ensure the water quality is consistently high with minimal effort.</p>
                         <div class="space32"></div>
                     </div>
                 </div>

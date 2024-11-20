@@ -122,7 +122,7 @@
                         </p>
                         <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
                             <a href="/aboutus" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> About Us </a>
-                            <a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play popup-youtube">
+                            <a href="/assets/videos/home/aboutVideo1.mp4" class="play popup-youtube">
                             <span class="icon"><i class="fa-solid fa-play"></i></span>
                             <span class="text">How We Work</span>
                             </a>
@@ -142,7 +142,7 @@
                 <div class="col-lg-6">
                     <div class="service-header heading2">
                         <h5 data-aos="fade-right" data-aos-duration="800">Expert Pool Construction & Design </h5>
-                        <h2 class="text-anime-style-3" style="width: 650px">Built to Last, Designed for You</h2>
+                        <h2 class="text-anime-style-3" >Built for You, Built to Last</h2>
                         <p data-aos="fade-right" data-aos-duration="1000">
                             Turn your vision into reality with our custom pool construction services. 
                             We specialize in building pools that are not only visually stunning but also designed for durability and ease of maintenance. 
@@ -158,56 +158,22 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5">
                     <div class="service-slider-area owl-carousel">
+                        @foreach($services as $service)
                         <div class="service-slider-boxarea">
-                            <div class="img1 image-anime">
-                            <img src="assets/img/home/service1.jpeg" alt="Pool 1">
+                            <div class="img1 image-anime home-service">
+                                <img src="assets/img/services/service{{ $service->id }}/cover.jpeg" alt="Pool 1">
                             </div>
                             <div class="content-area">
                                 <div class="icons">
                                     <img src="assets/img/icons/service-icon1.svg" alt="">
                                 </div>
                                 <div class="space24"></div>
-                                <a href="service-single.html">Custom Pool Design & Planning</a>
+                                <a>{{ $service->name}}</a>
                                 <div class="space16"></div>
-                                <p>Tailored pool designs that fit the unique needs and style of the property, including shape, size, and features.</p>
-                                <div class="space24"></div>
-                                <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <p>{{ Str::limit($service->description, 120, '...') }}</p>
                             </div>
                         </div>
-
-                        <div class="service-slider-boxarea">
-                            <div class="img1 image-anime">
-                            <img src="assets/img/home/service2.jpeg" alt="Pool 2">
-                            </div>
-                            <div class="content-area">
-                            <div class="icons">
-                                <img src="assets/img/icons/service-icon1.svg" alt="">
-                            </div>
-                            <div class="space24"></div>
-                            <a href="service-single.html">Pool Construction</a>
-                            <div class="space16"></div>
-                            <p>Complete construction of new pools, including excavation, installation of plumbing and so on.</p>
-                            <div class="space24"></div>
-                            <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="service-slider-boxarea">
-                            <div class="img1 image-anime">
-                            <img src="assets/img/home/service3.jpeg" alt="Pool 3">
-                            </div>
-                            <div class="content-area">
-                            <div class="icons">
-                                <img src="assets/img/icons/service-icon1.svg" alt="">
-                            </div>
-                            <div class="space24"></div>
-                            <a href="service-single.html">Pool Renovation & Remodeling</a>
-                            <div class="space16"></div>
-                            <p>Upgrading and modernizing existing pools with new features to improve functionality and appearance.</p>
-                            <div class="space24"></div>
-                            <a href="/servicedetail" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -353,60 +319,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="work-slider-area owl-carousel">
-
+                    @foreach($projects as $project)
                     <div class="work-boxarea">
-                        <div class="img1 image-anime reveal">
-                        <img src="assets/img/home/project1.jpeg" alt="">
+                        <div class="img1 image-anime reveal home-work">
+                            <img src="assets/img/projects/project{{ $project->id }}/cover.jpeg" alt="">
                         </div>
                         <div class="content-area">
-                        <div class="icons">
-                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
-                        </div>
+
                         <div class="space24"></div>
-                        <p>Custom Pool Design & Planning</p>
+                        <p>{{ $project->category}}</p>
                         <div class="space16"></div>
-                        <a href="/projectdetail">Crafted To Fit Your Style And Space</a>
+                        <a>{{ $project->subtitle }}</a>
                         <div class="img2">
                             <img src="assets/img/elements/elements9.png" alt="">
                         </div>
                         </div>
                     </div>
-
-                    <div class="work-boxarea">
-                        <div class="img1 image-anime reveal">
-                        <img src="assets/img/home/project2.jpeg" alt="Project 2">
-                        </div>
-                        <div class="content-area">
-                        <div class="icons">
-                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
-                        </div>
-                        <div class="space24"></div>
-                        <p>New Pool Construction</p>
-                        <div class="space16"></div>
-                        <a href="/projectdetail">Expertly Built Pools</a>
-                        <div class="img2">
-                            <img src="assets/img/elements/elements9.png" alt="">
-                        </div>
-                        </div>
+                    @endforeach
                     </div>
-
-                    <div class="work-boxarea">
-                        <div class="img1 image-anime reveal">
-                        <img src="assets/img/home/project3.jpeg" alt="Project 3">
-                        </div>
-                        <div class="content-area">
-                        <div class="icons">
-                            <a href="/projectdetail"><img src="assets/img/icons/arrow1.svg" alt=""></a>
-                        </div>
-                        <div class="space24"></div>
-                        <p>Pool Renovation & Remodeling</p>
-                        <div class="space16"></div>
-                        <a href="/projectdetail">Old Pool Into A Modern Masterpiece</a>
-                        <div class="img2">
-                            <img src="assets/img/elements/elements9.png" alt="">
-                        </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="space16"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="work-header heading2">
+                        <a href="/projects" class="read-more-text"><h5><img src="assets/img/icons/logo-icon1.svg" alt="">Read More <i class="fa-solid fa-arrow-right"></i></h5></a>
                     </div>
                 </div>
             </div>

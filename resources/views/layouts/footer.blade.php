@@ -1,11 +1,11 @@
 <div class="footer1-section-area">
-  <img src="assets/img/elements/elements2.png" alt="" class="elements2 sw">
-  <img src="assets/img/elements/elements4.png" alt="" class="elements3">
+  <img src="{{ asset('assets/img/elements/elements2.png') }}" alt="" class="elements2 sw">
+  <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements3">
   <div class="container">
     <div class="row">
       <div class="col-lg col-md-6">
         <div class="footer-logo-area">
-          <img src="assets/img/logo/companylogo.png" alt="Company Logo">
+          <img src="{{ asset('assets/img/logo/companylogo.png')}}" alt="Company Logo">
           <p>We are committed to delivering outstanding pool construction and maintenance services</p>
          <div class="space24"></div>
           <ul>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="col-lg col-md-6">
-        <div class="footer-header pbleft2">
+        <div class="footer-header pbleft">
           <h3>Other Links</h3>
           <ul>
             <li><a href="#">Maintenance</a></li>
@@ -47,7 +47,7 @@
           <div class="space32"></div>
           <form>
             <input id="email" autocomplete="off" type="text" placeholder="Email Address..">
-            <button disabled type="submit" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Subscribe Now</button>
+            <button disabled type="submit" class="header-btn1"><img src="{{ asset('assets/img/icons/logo-icon1.svg') }}" alt=""> Subscribe Now</button>
           </form>
         </div>
       </div>
