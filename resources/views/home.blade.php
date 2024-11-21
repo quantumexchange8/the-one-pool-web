@@ -30,7 +30,7 @@
                         Let us build the pool of your dreams with exceptional craftsmanship and attention to detail for a lifetime of unforgettable moments.
                     </p>
                     <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
-                        <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Build A Pool</a>
+                        <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Building A Pool</a>
                         <a href="/contactus" class="header-btn1 btn2"><img src="assets/img/icons/logo-icon1.svg" alt=""> Discover More</a>
                     </div>
                     <div class="space60"></div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                    <div style="font-size: 20px">Choosing Quality Why We're Your Top Pick</div>
+                                    <div style="font-size: 20px"><b>Choosing Quality Why We're Your Top Pick</b></div>
                                 </div>
                             </div>
                             </div>
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                    <div style="font-size: 20px">Your Pool, Our Promise Reasons to Choose Us</div>
+                                    <div style="font-size: 20px"><b>Your Pool, Our Promise Reasons to Choose Us</b></div>
                                 </div>
                             </div>
                             </div>
@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="space32"></div>
                                 <div class="text-area">
-                                    <div style="font-size: 20px">Beyond the Surface Why Choose Our Team</div>
+                                    <div style="font-size: 20px"><b>Beyond the Surface Why Choose Our Team</b></div>
                                 </div>
                             </div>
                             </div>
@@ -151,7 +151,7 @@
                         </p>
                         <div class="space32"></div>
                         <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
-                            <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View More Service</a>
+                            <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View Service Details</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         @foreach($services as $service)
                         <div class="service-slider-boxarea">
                             <div class="img1 image-anime home-service">
-                                <img src="assets/img/services/service{{ $service->id }}/cover.jpeg" alt="Pool 1">
+                                <img src="{{ asset($service->images->first()->image_path) }}" alt="Service Cover Image">
                             </div>
                             <div class="content-area">
                                 <div class="icons">
@@ -188,7 +188,7 @@
                     <div class="testimonial-header text-center heading2">
                     <h5 data-aos="fade-right" data-aos-duration="800">Testimonial Pool Construction</h5>
                     <h2 class="text-anime-style-3">Why Our Clients Choose Us</h2>
-                    <p data-aos="fade-right" data-aos-duration="1000"> These testimonials reflect our commitment to excellence & <br class="d-lg-block d-none"> our dedication to making every pool a pristine and enjoyable</p>
+                    <p data-aos="fade-right" data-aos-duration="1000"> These testimonials highlight our dedication to excellence and our expertise in <br class="d-lg-block d-none"> constructing stunning, durable pools that bring our clients' visions to life.</p>
                     </div>
                 </div>
             </div>
@@ -313,6 +313,10 @@
                         <h5 data-aos="fade-right" data-aos-duration="800">Latest Pool Construction Work</h5>
                         <h2 class="text-anime-style-3">The Art of Pool Construction: Our Craftsmanship</h2>
                         <p data-aos="fade-right" data-aos-duration="1000">Discover the craftsmanship behind our stunning pool designs. Each project showcases our commitment to quality, precision, and innovation.</p>
+                        <div class="space24"></div>
+                        <div class="btn-area1">
+                            <a href="/projects" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View Project Details </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,28 +326,20 @@
                     @foreach($projects as $project)
                     <div class="work-boxarea">
                         <div class="img1 image-anime reveal home-work">
-                            <img src="assets/img/projects/project{{ $project->id }}/cover.jpeg" alt="">
+                            <img src="{{ asset($project->images->first()->image_path) }}" alt="Project Cover Image">
                         </div>
                         <div class="content-area">
 
                         <div class="space24"></div>
                         <p>{{ $project->category}}</p>
                         <div class="space16"></div>
-                        <a>{{ $project->subtitle }}</a>
+                        <a>{{ $project->title }}</a>
                         <div class="img2">
                             <img src="assets/img/elements/elements9.png" alt="">
                         </div>
                         </div>
                     </div>
                     @endforeach
-                    </div>
-                </div>
-            </div>
-            <div class="space16"></div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="work-header heading2">
-                        <a href="/projects" class="read-more-text"><h5><img src="assets/img/icons/logo-icon1.svg" alt="">Read More <i class="fa-solid fa-arrow-right"></i></h5></a>
                     </div>
                 </div>
             </div>
@@ -370,83 +366,80 @@
 
                 <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="contact-boxarea heading2">
-                    <h3>Get in Touch with Us</h3>
-                    <div class="space16"></div>
-                    <p>Whether you have questions about our services, need advice on pool maintenance, or want to schedule.</p>
-                    <div class="space24"></div>
-                    <div class="conact-input-area">
-                        <div class="row">
-                        <div class="col-lg-6">
-                            <div class="input-area">
-                            <input id="firstname" autocomplete="off" type="text" placeholder="First Name">
-                            </div>
-                            <div class="space20"></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="input-area">
-                            <input id="lastname" autocomplete="off" type="text" placeholder="Last Name">
-                            </div>
-                            <div class="space20"></div>
-                        </div>
+                        <h3>Get in Touch with Us</h3>
+                        <div class="space16"></div>
+                        <p>Whether you have questions about our services, need advice on pool maintenance, or want to schedule.</p>
+                        <div class="space24"></div>
+                        <div class="conact-input-area">
+                            <form action="{{ route('home.submit') }}" method="POST">
+                                @csrf <!-- Protects against cross-site request forgery -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="fullname" name="fullname" type="text" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                        <div class="col-lg-6">
-                            <div class="input-area">
-                            <input id="phonenumber" autocomplete="off" type="number" placeholder="Phone Number">
-                            </div>
-                            <div class="space20"></div>
-                        </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="phonenumber" name="phonenumber" type="number" placeholder="Phone Number" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                        <div class="col-lg-6">
-                            <div class="input-area">
-                            <input id="email" autocomplete="off" type="email" placeholder="Email Address">
-                            </div>
-                            <div class="space20"></div>
-                        </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="email" name="email" type="email" placeholder="Email Address" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                        <div class="col-lg-12">
-                            <div class="input-area">
-                            <select autocomplete="off" name="country"  class="nice-select">
-                                <option value="1" data-display="Kuala Lumpur">Kuala Lumpur</option>
-                                <option value="">Kuala Lumpur</option>
-                                <option value="">Selangor</option>
-                                <option value="">Penang</option>
-                                <option value="">Perak</option>
-                                <option value="">Johor</option>
-                            </select>
-                            </div>
-                        </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="subject" name="subject" type="text" placeholder="Subjects">
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                        <div class="col-lg-12">
-                            <div class="space20"></div>
-                            <div class="input-area">
-                            <textarea name="#" id="#" placeholder="Message"></textarea>
-                            </div>
+                                    <div class="col-lg-12">
+                                        <div class="input-area">
+                                            <textarea id="message" name="message" placeholder="Write Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="input-area">
+                                            <button class="header-btn1" type="submit">
+                                                <img src="assets/img/icons/logo-icon1.svg" alt=""> Submit Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if(session('success'))
+                                <div>
+                                    {{ session('success') }}
+                                </div>
+                                @endif
+                            </form>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="space32"></div>
-                            <div class="input-area">
-                            <button class="header-btn1" type="submit"><img src="assets/img/icons/logo-icon1.svg" alt=""> Submit </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                     <div class="counter-boxarea">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-6">
-                        <div class="box2 heading2">
-                            <h2><span class="counter">99.9</span>%</h2>
-                            <p>Satisfied Clients</p>
-                        </div>
-                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-6">
+                            <div class="box2 heading2">
+                                <h2><span class="counter">99.9</span>%</h2>
+                                <p>Satisfied Clients</p>
+                            </div>
+                            </div>
 
-                        <div class="col-lg-6 col-md-6 col-6">
-                        <div class="box2 heading2">
-                            <h2><span class="counter">31</span>+</h2>
-                            <p>Years of Experience</p>
+                            <div class="col-lg-6 col-md-6 col-6">
+                            <div class="box2 heading2">
+                                <h2><span class="counter">31</span>+</h2>
+                                <p>Years of Experience</p>
+                            </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>

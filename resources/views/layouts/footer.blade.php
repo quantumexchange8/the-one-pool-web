@@ -2,7 +2,7 @@
   <img src="{{ asset('assets/img/elements/elements2.png') }}" alt="" class="elements2 sw">
   <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements3">
   <div class="container">
-    <div class="row">
+    <div class="row footer-area">
       <div class="col-lg col-md-6">
         <div class="footer-logo-area">
           <img src="{{ asset('assets/img/logo/companylogo.png')}}" alt="Company Logo">
@@ -17,8 +17,8 @@
         </div>
       </div>
 
-      <div class="col-lg col-md-6">
-        <div class="footer-header pbleft">
+      <div class="footer-section">
+        <div class="footer-header">
           <h3>Quick links</h3>
           <ul>
             <li><a href="/">Home</a></li>
@@ -30,25 +30,20 @@
         </div>
       </div>
 
-      <div class="col-lg col-md-6">
-        <div class="footer-header pbleft">
-          <h3>Other Links</h3>
+      <div class="footer-section2">
+        <div class="footer-header">
+          <h3>Other Info</h3>
           <ul>
-            <li><a href="#">Maintenance</a></li>
-            <li><a href="#"> Equipment</a></li>
+            <li><a><b>Working:</b> <br> Tuesday-Saturday <br> 8:00am - 5:00pm </a></li>
+            <li><a><b>Contact Number:</b> <br> +60126370800 <br> +60162243443 </a></li>
           </ul>
         </div>
       </div>
 
       <div class="col-lg col-md-6">
         <div class="footer-header">
-          <h3>Newsletter</h3>
-          <p>Subscribe us & receive our latest news & articles</p>
-          <div class="space32"></div>
-          <form>
-            <input id="email" autocomplete="off" type="text" placeholder="Email Address..">
-            <button disabled type="submit" class="header-btn1"><img src="{{ asset('assets/img/icons/logo-icon1.svg') }}" alt=""> Subscribe Now</button>
-          </form>
+          <h3>Location</h3>
+          <p>No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor</p>
         </div>
       </div>
     </div>

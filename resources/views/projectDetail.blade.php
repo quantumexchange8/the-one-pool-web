@@ -12,8 +12,8 @@
             <div class="row">
                 <div class="col-lg-8 m-auto">
                     <div class="inner-page-header heading1 text-center">
-                        <h1>{{ $project->title }}</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/projects"> Projects <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->title }} </span></a>
+                        <h1>{{ $project->category }}: {{ $project->client}}</h1>
+                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/projects"> Projects <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->category }}: {{ $project->client}} </span></a>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-8 m-auto">
                     <div class="single-section-area heading2">
-                        <h3>{{ $project->subtitle }}</h3>
+                        <h3>{{ $project->title }}</h3>
                         <div class="space16"></div>
                         <p>{{ $project->description }}</p>
                         <div class="space42"></div>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="space22"></div>
                         <div class="img1 image-anime project-image">
-                            <img src="{{ asset('assets/img/projects/project' . $project->id . '/1.jpeg') }}" alt="">
+                            <img src="{{ asset($project->images->first()->image_path) }}" alt="Project First Image">
                         </div>
                         <div class="space30"></div>
                         <div class="row">

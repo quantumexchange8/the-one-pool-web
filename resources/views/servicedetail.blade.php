@@ -14,7 +14,7 @@
                 <div class="col-lg-8 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1> {{$service->name}}</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/services">Our Services <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $service->name}} </span></a>
+                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/services"> Services <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $service->name}} </span></a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="col-lg-8 m-auto">
                     <div class="single-section-area heading2">
                         <div class="img1 image-anime reveal service-image">
-                            <img src="{{ asset('assets/img/services/service' . $service->id . '/1.jpeg') }}" alt="">
+                        <img src="{{ asset($service->images->first()->image_path) }}" alt="Service First Image">
                         </div>
                         <div class="space42"></div>
                         <h3>{{ $service->subtitle}}</h3>

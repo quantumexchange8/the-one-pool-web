@@ -2,23 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
-use App\Models\Service;
-use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
-class HomeController extends Controller
+class ContactController extends Controller
 {
-    public function index()
-    {
-        $projects = Project::all(); 
-        $services = Service::all(); 
-
-        return view('home', compact('projects', 'services'));
-    }
-
     public function submit(Request $request)
     {
+        // Validate form data
         $validated = $request->validate([
             'fullname' => 'required|string|max:255',
             'phonenumber' => 'required|numeric',
@@ -27,9 +18,12 @@ class HomeController extends Controller
             'message' => 'required|string',
         ]);
 
+        // Insert the data into the database
         Contact::create($validated);
 
-        return redirect()->route('home')->with('success', 'Your message has been sent successfully!');
+        // Redirect with a success message
+        return redirect()->route('contactus')->with('success', 'Your message has been sent successfully!');
     }
 }
+
 

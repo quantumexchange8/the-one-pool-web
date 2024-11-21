@@ -15,8 +15,7 @@ class ProjectsTableSeeder extends Seeder
     public function run()
     {
         $project1 = Project::create([
-            'title' => 'Pool Construction: Shah Alam Expressway',
-            'subtitle' => 'Crafting Pool Perfection',
+            'title' => 'Crafting Pool Perfection',
             'description' => 'Designed and built a stunning, durable swimming pool tailored to the client’s vision. The project included premium materials, advanced features, and meticulous craftsmanship, completed on time and within budget.',
             'category' => 'Pool Construction',
             'location' => 'Shah Alam Expressway',
@@ -25,8 +24,7 @@ class ProjectsTableSeeder extends Seeder
         ]);
 
         $project2 = Project::create([
-            'title' => 'Landscaping and Features: Seksyen 32, Shah Alam',
-            'subtitle' => 'Elevating Poolside Landscapes',
+            'title' => 'Elevating Poolside Landscapes',
             'description' => 'Enhance your pool area with thoughtfully designed landscaping and features that blend beauty and functionality. From lush greenery and elegant decking to striking water features and ambient lighting, we create inviting outdoor spaces that perfectly complement your pool.',
             'category' => 'Landscaping and Features',
             'location' => 'Petaling Jaya, Selangor',
@@ -35,13 +33,21 @@ class ProjectsTableSeeder extends Seeder
         ]);
 
         $project3 = Project::create([
-            'title' => 'Renovation and Upgrades: Petaling Jaya, Selangor',
-            'subtitle' => 'Revitalizing Pools with Modern Upgrades',
+            'title' => 'Revitalizing Pools with Modern Upgrades',
             'description' => 'Transform your existing pool into a contemporary masterpiece with our renovation and upgrade services. From updated tiling and advanced filtration systems to stunning lighting and added features, we enhance both the aesthetics and functionality of your pool to meet modern standards.',
             'category' => 'Renovation and Upgrades',
             'location' => 'Petaling Jaya, Selangor',
             'client' => 'Good Park',
             'date' => '2024-11-15',
+        ]);
+
+        $project4 = Project::create([
+            'title' => 'Designing and Constructing Pools to Elevate Your Business',
+            'description' => "Our commercial pool solutions are tailored to meet the unique needs of businesses, providing exceptional design, quality construction, and state-of-the-art features. Whether it's a resort, fitness center, or public facility, we ensure that every pool project enhances your brand and offers a superior experience for your clients.",
+            'category' => 'Landscaping and Features',
+            'location' => 'Cyberjaya, Kuala Lumpur',
+            'client' => 'Holiday Hotel',
+            'date' => '2024-08-06',
         ]);
 
         $images1 = [
@@ -103,6 +109,26 @@ class ProjectsTableSeeder extends Seeder
         foreach ($images3 as $image) {
             ProjectImage::create([
                 'project_id' => $project3->id,
+                'image_path' => $image,
+            ]);
+        }
+
+        $images4 = [
+            '/assets/img/projects/project4/1.jpeg',
+            '/assets/img/projects/project4/2.jpeg',
+            '/assets/img/projects/project4/3.jpeg',
+            '/assets/img/projects/project4/4.jpeg',
+            '/assets/img/projects/project4/5.jpeg',
+            '/assets/img/projects/project4/6.jpeg',
+            '/assets/img/projects/project4/7.jpeg',
+            '/assets/img/projects/project4/8.jpeg',
+            '/assets/img/projects/project4/9.jpeg',
+            '/assets/img/projects/project4/10.jpeg',
+        ];
+    
+        foreach ($images4 as $image) {
+            ProjectImage::create([
+                'project_id' => $project4->id,
                 'image_path' => $image,
             ]);
         }

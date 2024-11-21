@@ -38,8 +38,7 @@
                             <li></li>
                         </ul>
                         <div class="space32"></div>
-                        <a href="#">1 Street, 2nd block, 3rd Floor
-                        <br class="d-lg-block d-none"> Selangor, Malaysia</a>
+                        <a href="#">No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor, Malaysia</a>
                     </div>
                 </div>
 
@@ -57,8 +56,8 @@
                         <li></li>
                     </ul>
                     <div class="space32"></div>
-                    <a href="tel:+022(123)4568806">+60 111 777 8888
-                        <br class="d-lg-block d-none"> (+47)1221 09878</a>
+                    <a href="tel:+022(123)4568806">+60126370800 /
+                        <br class="d-lg-block d-none"> +60162243443</a>
                 </div>
             </div>
 
@@ -98,45 +97,52 @@
                         <h2 class="text-center">Send Us Message</h2>
                         <p class="text-center">Your email address will not be published.</p>
                         <div class="space28"></div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="input-area">
-                                    <input id="fullname" type="text" placeholder="Full Name">
-                                </div>
-                            </div>
+                        <form action="{{ route('contactus') }}" method="POST">
+                                @csrf <!-- Protects against cross-site request forgery -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="fullname" name="fullname" type="text" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                            <div class="col-lg-6">
-                                <div class="input-area">
-                                    <input id="phonenumber" type="number" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-6">
-                                <div class="input-area">
-                                    <input id="emailaddress" type="Email" placeholder="Email Address">
-                                </div>
-                            </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="phonenumber" name="phonenumber" type="number" placeholder="Phone Number" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                            <div class="col-lg-6">
-                                <div class="input-area">
-                                    <input id="subjects" type="text" placeholder="Subjects">
-                                </div>
-                            </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="email" name="email" type="email" placeholder="Email Address" required>
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                            <div class="col-lg-12">
-                                <div class="input-area">
-                                    <textarea id="message" placeholder="Write Message"></textarea>
-                                </div>
-                            </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-area">
+                                            <input id="subject" name="subject" type="text" placeholder="Subjects">
+                                        </div>
+                                        <div class="space20"></div>
+                                    </div>
 
-                            <div class="space32"></div>
-
-                            <div class="col-lg-12">
-                                <div class="input-area">
-                                    <button type="submit" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> Submit Now</button>
+                                    <div class="col-lg-12">
+                                        <div class="input-area">
+                                            <textarea id="message" name="message" placeholder="Write Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="input-area">
+                                            <button class="header-btn1" type="submit">
+                                                <img src="assets/img/icons/logo-icon1.svg" alt=""> Submit Now
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </form>
                     </div>
                 </div>
             </div>

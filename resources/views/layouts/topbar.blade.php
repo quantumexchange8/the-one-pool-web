@@ -18,9 +18,9 @@
 
               <div class="top-author-area">
                 <ul>
-                  <li><a href="#" style="text-align: left;"><i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR </a></li>
-                  <li><a href="#"><img src="{{ asset('assets/img/icons/time.svg') }}" alt=""> Tuesday - Saturday <br>8:00 am - 5:00 pm </a></li>
-                  <li><a href="tel:+92152226132" class="m-0"><i class="fa-solid fa-phone"></i> Call Now: +60126370800 / +60162243443 </a></li>
+                  <li><a style="text-align: left;"><i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR </a></li>
+                  <li><a><img src="{{ asset('assets/img/icons/time.svg') }}" alt=""> Tuesday - Saturday <br>8:00 am - 5:00 pm </a></li>
+                  <li><a class="m-0"><i class="fa-solid fa-phone"></i> Call Now: +60126370800 / +60162243443 </a></li>
                 </ul>
               </div>
             </div>
@@ -34,7 +34,7 @@
         <div class="col-lg-12">
           <div class="header-elements">
             <div class="site-logo">
-              <a href="index.html"><img src="{{ asset('assets/img/logo/companylogo.png')}}" alt="Company Logo"></a>
+              <a href="/"><img src="{{ asset('assets/img/logo/companylogo.png')}}" alt="Company Logo"></a>
             </div>
             <div class="main-menu">
               <ul>

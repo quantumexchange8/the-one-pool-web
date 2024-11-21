@@ -1156,11 +1156,11 @@ Location:
 
 .sp2 {
   padding: 100px 0 70px;
-  margin-bottom: 100px;
 }
 @media (max-width: 767px) {
   .sp2 {
     padding: 50px 0 20px;
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3419,7 +3419,7 @@ ul.pagination li a.active {
 }
 @media (max-width: 767px) {
   .hero1-section-area {
-    padding: 160px 0 60px;
+    padding: 100px 0 60px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4274,12 +4274,13 @@ ul.pagination li a.active {
   line-height: var(--ztc-font-size-font-s20);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
-  margin-top: 20px;
+  margin-top: 25px;
+  height: 24px;
 }
 .mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 6px;
 }
 .mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single .contact-info-icon i {
   color: var(--ztc-bg-bg-1);
@@ -4297,7 +4298,7 @@ ul.pagination li a.active {
   margin-left: 10px;
 }
 .mobile-sidebar.mobile-sidebar1 .footer1-contact-info .social-links-mobile-menu ul {
-  margin-top: 16px;
+  margin-top: 6px;
 }
 .mobile-sidebar.mobile-sidebar1 .footer1-contact-info .social-links-mobile-menu ul li {
   display: inline-block;
@@ -4847,9 +4848,9 @@ ul.pagination li a.active {
   display: inline-block;
   padding-left: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
   .blog1-section-area .blog-boxarea .content-area ul li .date {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 }
 .blog1-section-area .blog-boxarea .content-area a {
@@ -5948,9 +5949,7 @@ ul.pagination li a.active {
   bottom: 0;
   left: 0;
 }
-.footer1-section-area .footer-logo-area {
-  padding: 0 50px 0 0;
-}
+
 @media (max-width: 767px) {
   .footer1-section-area .footer-logo-area {
     padding: 0;
@@ -11502,7 +11501,7 @@ body.homepage1-body, html {
   background: var(--ztc-bg-bg-3);
   border-radius: 8px;
   transition: all 0.4s;
-  padding: 48px;
+  padding: 45px;
   margin-bottom: 30px;
   border: 1px solid var(--ztc-bg-bg-3);
 }
@@ -14076,6 +14075,15 @@ body.homepage1-body, html {
   width: 100%;
   padding-top: 50px;
 }
+@media (max-width: 767px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding-top: 0px;
+  }
+}
 
 .feature-item {
   background: #fff;
@@ -14154,17 +14162,38 @@ body.homepage1-body, html {
   height: 500px;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .project-list-image {
+    width: full;
+    height: 300px;
+    object-fit: cover;
+  }
+}
 
 .project-image {
   width: full;
   height: 500px;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .project-image {
+    width: full;
+    height: 300px;
+    object-fit: cover;
+  }
+}
 
 .service-image {
   width: full;
   height: 500px;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .service-image {
+    width: full;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .read-more {
@@ -14202,8 +14231,47 @@ body.homepage1-body, html {
   }
 }
 
+.footer-area {
+  gap: 120px;
+}
+@media (max-width: 767px) {
+  .footer-area {
+    gap: 48px;
+  }
+}
 
+.footer-section {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
 
+.footer-section2 {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+}
+
+.mision-img {
+  width: 306px;
+  height: 340px;
+}
+@media (max-width: 767px) {
+  .mision-img {
+    width: 366px;
+    height: 407px;
+  }
+}
+.mision-img2 {
+  width: 636px;
+  height: 348px;
+}
+@media (max-width: 767px) {
+  .mision-img2 {
+    width: 366px;
+    height: 200px;
+  }
+}
 
 
 /*============= PROJECTS CSS AREA ===============*//*# sourceMappingURL=main.css.map */

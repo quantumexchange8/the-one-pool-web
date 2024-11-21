@@ -34,10 +34,10 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="blog-boxarea">
                                         <div class="img1 image-anime project-list-image">
-                                        <img src="{{ asset('assets/img/projects/project' . $project->id . '/cover.jpeg') }}" alt="{{ $project->title }}">
+                                            <img src="{{ asset($project->images->first()->image_path) }}" alt="Project Cover Image">
                                         </div>
                                         <div class="content-area">
-                                            <ul>
+                                            <ul class="">
                                                 <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> {{ $project->location }} </a></li>
                                                 <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> {{ $project->date }} </a></li>
                                             </ul>
@@ -65,27 +65,33 @@
                         <div class="serach-area">
                             <h3>Search</h3>
                             <div class="space24"></div>
-                            <form>
-                                <input id="search" type="text" placeholder="Search..">
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <form method="GET" action="{{ route('projects') }}">
+                                <input 
+                                    id="search" 
+                                    name="search" 
+                                    type="text" 
+                                    value="{{ request('search') }}" 
+                                    placeholder="Search..." 
+                                />
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                             </form>
                         </div>
+
                         <div class="space40"></div>
 
-                        <h3>Popular Tags</h3>
+                        <h3>Categories</h3>
                         <div class="space12"></div>
                         <div class="projects-tags">
                             <ul>
-                                <li><a href="#">Pool Cleaning</a></li>
-                                <li><a href="#">Pool Automation</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Green Pool Cleanup</a></li>
-                                <li><a href="#">Pool Safety</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Pool Upgrades</a></li>
-                                <li><a href="#">Pool Service</a></li>
+                                @foreach($categories as $category)
+                                    <li>
+                                        <a href="{{ route('projects', ['category' => $category]) }}">
+                                            {{ $category }}
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
 
@@ -94,9 +100,9 @@
                         <div class="space4"></div>
                         <div class="service-list">
                             <ul>
-                                <li><a href="#"><span>Pool Construction: Shah Alam Expressway</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
-                                <li><a href="#"><span>Landscaping and Features: Seksyen 32, Shah Alam</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
-                                <li><a href="#"><span>Renovation and Upgrades: Petaling Jaya, Selangor</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+                                @foreach($sideprojects as $project)
+                                    <li><a href="{{ route('project.details', ['id' => $project->id]) }}"><span>{{ $project->category }}: {{ $project->client}}</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+                                @endforeach
                             </ul>
                         </div>
 

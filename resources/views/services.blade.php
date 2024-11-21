@@ -13,7 +13,7 @@
                 <div class="col-lg-4 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>Our Services</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a><span> Our Services </span></a>
+                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a><span> Services </span></a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-boxarea">
                         <div class="img1 image-anime" style="height: 380px">
-                            <img src="assets/img/services/service{{ $service->id }}/cover.jpeg" alt="">
+                            <img src="{{ asset($service->images->first()->image_path) }}" alt="Sevice Cover Image">
                         </div>
                         <div class="content-area">
                             <div class="icons">

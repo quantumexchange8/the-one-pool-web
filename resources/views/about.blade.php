@@ -37,17 +37,17 @@
                 <div class="col-lg-6">
                     <div class="about-header-area heading2">
                         <p data-aos="fade-right" data-aos-duration="1000"> 
-                            <div data-aos="fade-right" data-aos-duration="1000">
+                            <p data-aos="fade-right" data-aos-duration="1000">
                                 The One Pool is a premier pool construction company specializing in designing and building exceptional swimming pools for residential and commercial properties. 
                                 Renowned for quality craftsmanship and innovative solutions, we transform spaces into luxurious aquatic retreats that combine beauty, functionality, and durability.
-                            </div>
+                            </p>
                             </br>
-                            <div data-aos="fade-right" data-aos-duration="1000">
+                            <p data-aos="fade-right" data-aos-duration="1000">
                                 Founded with a vision to redefine the pool construction industry, The One Pool brings together a team of seasoned professionals with extensive experience in pool design, engineering, and construction. 
                                 Our expertise extends from custom residential pools to large-scale commercial projects, all crafted with meticulous attention to detail and the highest industry standards.
                                 At The One Pool, we pride ourselves on using cutting-edge materials and techniques, ensuring our pools are built to last and provide years of enjoyment. 
                                 Our commitment to client satisfaction drives us to deliver personalized solutions that exceed expectations, making us a trusted partner for creating stunning and enduring pools.
-                            </div>
+                            </p>
                         </p>
                     </div>
                 </div>
@@ -59,20 +59,23 @@
     <!--===== WHAT WE DO AREA STARTS =======-->
     <div class="about-inner-section-area sp2">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" style="width: 500px">
+            <div class="row">
+                <div class="col-lg-6">
                     <div class="about-inner-header heading2" >
                         <h5>The One Pool: What We Do</h5>
                         <h2>More Than Just Pool Construction</h2>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="heading2 text">
                         <p>
                             At The One Pool, we specialize in creating bespoke swimming pool solutions that cater to both residential and commercial needs. 
                             Our services are designed to cover every aspect of pool construction, ensuring a seamless and stress-free experience for our clients.
                         </p>
+                        <div class="space24"></div>
+                        <div class="btn-area1">
+                            <a href="/services" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View More Service </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,9 +116,6 @@
                     </div>
                 </div>
             </div>
-            <div class="read-more">
-                <a href="/services" class="read-more-text"> <h5>Read More <i class="fa-solid fa-arrow-right"></i> </h5></a>
-            </div>
         </div>
     </div>
 
@@ -125,20 +125,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="img1 reveal image-anime">
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="img1 reveal image-anime mision-img">
                                 <img src="assets/img/aboutus/mision1.jpeg" alt="">
                             </div>
                             <div class="space30"></div>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <div class="img1 reveal image-anime">
+                            <div class="img1 reveal image-anime mision-img">
                                 <img src="assets/img/aboutus/mision2.jpeg" alt="">
                             </div>
                             <div class="space30"></div>
                         </div>
                     </div>
-                    <div class="img1 reveal image-anime">
+                    <div class="img1 reveal image-anime mision-img2">
                         <img src="assets/img/aboutus/mision3.jpeg" alt="">
                     </div>
                     <div class="space30 d-lg-none d-block"></div>
@@ -146,7 +146,7 @@
 
                 <div class="col-lg-6">
                     <div class="about-mission-header heading2">
-                        <h5>Our Mision The One Pool</h5>
+                        <h5>The One Pool Mision</h5>
                         <h2>Building Dreams, One Pool at a Time</h2>
                         <p>At The One Pool, we are committed to creating innovative and beautifully crafted pools that blend style, functionality, and quality.</p>
                         <div class="space32"></div>
