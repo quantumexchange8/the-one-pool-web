@@ -13,7 +13,7 @@
                 <div class="col-lg-8 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>{{ $project->category }}: {{ $project->client}}</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/projects"> Projects <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->category }}: {{ $project->client}} </span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i></a> <a href="/projects"> Projects </a> <a><i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->category }}: {{ $project->client}} </span></a>
                     </div>
                 </div>
             </div>
@@ -34,28 +34,28 @@
                             <div class="col-lg-3 col-md-6 col-6">
                                 <div class="project-list">
                                     <h4>Category </h4>
-                                    <a href="#">{{ $project->category }}</a>
+                                    <a>{{ $project->category }}</a>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6 col-6">
                                 <div class="project-list">
                                     <h4>Location</h4>
-                                    <a href="#">{{ $project->location }}</a>
+                                    <a>{{ $project->location }}</a>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-6">
                                 <div class="project-list">
                                     <h4>Client</h4>
-                                    <a href="#"> {{ $project->client }} </a>
+                                    <a> {{ $project->client }} </a>
                                 </div>
                             </div>
 
                             <div class="col-lg-2 col-md-6 col-6">
                                 <div class="project-list">
                                     <h4>Date </h4>
-                                    <a href="#">{{ $project->date }}</a>
+                                    <a>{{ $project->date }}</a>
                                 </div>
                             </div>
                         </div>

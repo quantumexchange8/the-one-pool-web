@@ -34,8 +34,8 @@
         <div class="footer-header">
           <h3>Other Info</h3>
           <ul>
-            <li><a><b>Working:</b> <br> Tuesday-Saturday <br> 8:00am - 5:00pm </a></li>
-            <li><a><b>Contact Number:</b> <br> +60126370800 <br> +60162243443 </a></li>
+            <p><b>Working:</b> <br> Tuesday-Saturday <br> 8:00am - 5:00pm </p>
+            <p><b>Contact Number:</b> <br> +60126370800 <br> +60162243443 </p>
           </ul>
         </div>
       </div>

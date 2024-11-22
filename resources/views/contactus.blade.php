@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('contents')
+
     <!--===== HERO AREA STARTS =======-->
     <div class="inner-header-section-area">
         <div class="elements2">
@@ -38,7 +39,7 @@
                             <li></li>
                         </ul>
                         <div class="space32"></div>
-                        <a href="#">No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor, Malaysia</a>
+                        <a>No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor, Malaysia</a>
                     </div>
                 </div>
 
@@ -56,7 +57,7 @@
                         <li></li>
                     </ul>
                     <div class="space32"></div>
-                    <a href="tel:+022(123)4568806">+60126370800 /
+                    <a>+60126370800 /
                         <br class="d-lg-block d-none"> +60162243443</a>
                 </div>
             </div>
@@ -75,7 +76,7 @@
                     <li></li>
                     </ul>
                     <div class="space32"></div>
-                    <a href="mailto:drmtech99.com">theonepool@gmail.com
+                    <a>theonepool@gmail.com
                     <br class="d-lg-block d-none"> theonepool.com</a>
                 </div>
             </div>
@@ -89,7 +90,7 @@
     </div>
     </div> 
 
-    <div class="contact-inner-box-section">
+    <div id="contact-form"  class="contact-inner-box-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -97,52 +98,57 @@
                         <h2 class="text-center">Send Us Message</h2>
                         <p class="text-center">Your email address will not be published.</p>
                         <div class="space28"></div>
+                        @if(session()->has('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                            </div>
+                        @endif
                         <form action="{{ route('contactus') }}" method="POST">
-                                @csrf <!-- Protects against cross-site request forgery -->
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="input-area">
-                                            <input id="fullname" name="fullname" type="text" placeholder="Full Name" required>
-                                        </div>
-                                        <div class="space20"></div>
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        <input id="fullname" name="fullname" type="text" autocomplete="off" placeholder="Full Name" required>
                                     </div>
+                                    <div class="space20"></div>
+                                </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="input-area">
-                                            <input id="phonenumber" name="phonenumber" type="number" placeholder="Phone Number" required>
-                                        </div>
-                                        <div class="space20"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        <input id="phonenumber" name="phonenumber" type="number" placeholder="Phone Number" required>
                                     </div>
+                                    <div class="space20"></div>
+                                </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="input-area">
-                                            <input id="email" name="email" type="email" placeholder="Email Address" required>
-                                        </div>
-                                        <div class="space20"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        <input id="email" name="email" type="email" autocomplete="on" placeholder="Email Address" required>
                                     </div>
+                                    <div class="space20"></div>
+                                </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="input-area">
-                                            <input id="subject" name="subject" type="text" placeholder="Subjects">
-                                        </div>
-                                        <div class="space20"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        <input id="subject" name="subject" type="text" autocomplete="off" placeholder="Subjects">
                                     </div>
+                                    <div class="space20"></div>
+                                </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="input-area">
-                                            <textarea id="message" name="message" placeholder="Write Message" required></textarea>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-12">
-                                        <div class="input-area">
-                                            <button class="header-btn1" type="submit">
-                                                <img src="assets/img/icons/logo-icon1.svg" alt=""> Submit Now
-                                            </button>
-                                        </div>
+                                <div class="col-lg-12">
+                                    <div class="input-area">
+                                        <textarea id="message" name="message" autocomplete="off" placeholder="Write Message" required></textarea>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="space20"></div>
+                                <div class="col-lg-12">
+                                    <div class="input-area">
+                                        <button class="header-btn1" type="submit">
+                                            <img src="assets/img/icons/logo-icon1.svg" alt=""> Submit Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

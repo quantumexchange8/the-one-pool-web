@@ -1141,7 +1141,7 @@ Location:
 
 /*============= COMMON CSS AREA ENDS===============*/
 .sp1 {
-  padding: 100px 0 100px;
+  padding: 130px 0 130px;
 }
 @media (max-width: 767px) {
   .sp1 {
@@ -14272,6 +14272,7 @@ body.homepage1-body, html {
     height: 200px;
   }
 }
+
 
 
 /*============= PROJECTS CSS AREA ===============*//*# sourceMappingURL=main.css.map */

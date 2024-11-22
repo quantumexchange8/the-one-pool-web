@@ -13,7 +13,7 @@
                 <div class="col-lg-4 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>About Us</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a><span>About Us</span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i> <span>About Us</span></a>
                     </div>
                 </div>
             </div>

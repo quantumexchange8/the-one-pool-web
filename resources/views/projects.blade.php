@@ -13,7 +13,7 @@
                 <div class="col-lg-10 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>Our Past Projects</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a><a><span> Projects </span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i> <span> Projects </span></a>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                                                 <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> {{ $project->date }} </a></li>
                                             </ul>
                                             <div class="space16"></div>
-                                            <a>{{ $project->category }}: {{ $project->client}}</a>
+                                            <a href="{{ route('project.details', ['id' => $project->id]) }}">{{ $project->category }}: {{ $project->client}}</a>
                                             <div class="space16"></div>
                                             <p>{{ Str::limit($project->description, 150, '...') }}</p>
                                             <div class="space24"></div>

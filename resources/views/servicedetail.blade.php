@@ -14,7 +14,7 @@
                 <div class="col-lg-8 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1> {{$service->name}}</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a href="/services"> Services <i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $service->name}} </span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i></a> <a href="/services"> Services </a> <a><i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $service->name}} </span></a>
                     </div>
                 </div>
             </div>

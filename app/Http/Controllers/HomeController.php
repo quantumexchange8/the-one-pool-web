@@ -29,7 +29,8 @@ class HomeController extends Controller
 
         Contact::create($validated);
 
-        return redirect()->route('home')->with('success', 'Your message has been sent successfully!');
+        return redirect()->route('home.submit')->with('success', 'Your message has been sent successfully!')->withFragment('contact-form');
     }
 }
+
 
