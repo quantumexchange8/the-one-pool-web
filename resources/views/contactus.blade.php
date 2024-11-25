@@ -86,7 +86,7 @@
 
     <div class="mapouter">
     <div class="gmap_canvas">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4506257.120552435!2d88.67021924228865!3d21.954385721237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704088968016!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.06600450548!2d101.58247451175521!3d3.3338703966269305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc426918579db5%3A0xc21c8ae32ad2a4a5!2s12%2C%20Jalan%202%2F24%2C%20Taman%20Bukit%20Rawang%20Jaya%2C%2048000%20Rawang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1732500982331!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div> 
 
