@@ -36,22 +36,23 @@
                         <p>{{ $service->description}}</p>
                         <div class="space42"></div>
 
-                        @foreach($service->details as $title => $points)
+                        @foreach($service->serviceSection as $section)
                             <div class="icons-list">
                                 <div class="icons">
                                     <img src="{{ asset('assets/img/icons/check-icon2.svg') }}" alt="">
                                 </div>
                                 <div class="text">
-                                    <h3>{{ $title }}</h3>
-                                    <ul>
-                                        @foreach($points as $point)
-                                            <li>{{ $point }}</li>
+                                    <h3>{{ $section->title }}</h3> 
+                                    <ul class="bullet-list " style="padding-left: 20px">
+                                        @foreach($section->serviceDetail as $detail)
+                                            <li  class="bullet-list">{{ $detail->item }}</li>
                                         @endforeach
                                     </ul>
                                 </div>
                             </div>
                             <div class="space20"></div>
                         @endforeach
+
 
 
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('client');
             $table->Date('date');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

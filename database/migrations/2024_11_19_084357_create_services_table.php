@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');  
             $table->string('subtitle');  
             $table->text('description'); 
-            $table->json('details');  // JSON-encoded details (subtitles and point-form descriptions)
+            $table->softDeletes();  
             $table->timestamps();  
         });
         

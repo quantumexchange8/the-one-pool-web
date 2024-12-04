@@ -14273,6 +14273,11 @@ body.homepage1-body, html {
   }
 }
 
+.bullet-list {
+  list-style-type: disc;
+}
+
+
 
 
 /*============= PROJECTS CSS AREA ===============*//*# sourceMappingURL=main.css.map */

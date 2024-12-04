@@ -42,20 +42,10 @@
                 <li><a href="/aboutus">About Us</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/projects">Projects</a></li>
-                <!-- <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown-padding">
-                    <li><a href="testimonial.html">Testimonial</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                    <li><a href="faq.html">FAQ,s</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="404.html">404</a></li>
-                  </ul>
-                </li> -->
               </ul>
             </div>
             <div class="btn-area">
-              <a href="/contactus" class="header-btn1"> <img src="{{ asset('assets/img/icons/logo-icon1.svg') }}" alt=""> Request A Quote</a>
+            <a href="{{ route('contactus') }}" class="header-btn1"> <img src="{{ asset('assets/img/icons/logo-icon1.svg') }}" alt=""> Contact Us </a>
             </div>
           </div>
         </div>
