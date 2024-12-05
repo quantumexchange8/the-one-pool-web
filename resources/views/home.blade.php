@@ -435,8 +435,8 @@
 
                             <div class="col-lg-6 col-md-6 col-6">
                             <div class="box2 heading2">
-                                <h2><span class="counter">31</span>+</h2>
-                                <p>Years of Experience</p>
+                                <h2><span class="counter">131</span>+</h2>
+                                <p>Projects Delivered</p>
                             </div>
                             </div>
                         </div>

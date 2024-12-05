@@ -32,15 +32,15 @@
 
       <div class="footer-section2">
         <div class="footer-header">
-          <h3>Other Info</h3>
+          <h3>Contact Info</h3>
           <ul>
-            <p><b>Working:</b> <br> Tuesday-Saturday <br> 8:00am - 5:00pm </p>
-            <p><b>Contact Number:</b> <br> +60126370800 <br> +60162243443 </p>
+            <p><b>Contact Number:</b> <br> <a href="tel:+60126370800" style="color: #5A5A5A;">+60126370800</a> <br> <a href="tel:+60162243443" style="color: #5A5A5A;">+60162243443</a> </p>
+            <p><b>Email:</b> <br>enquiry@theonepool.com.my</p>
           </ul>
         </div>
       </div>
 
-      <div class="col-lg col-md-6">
+      <div class="footer-section col-lg col-md-6">
         <div class="footer-header">
           <h3>Location</h3>
           <p>No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor</p>

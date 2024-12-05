@@ -29,7 +29,7 @@ class ProjectController extends Controller
         
         $projects = $query->orderby('date', 'desc')->with('images')->get();
 
-        $sideprojects = Project::orderBy('date', 'desc')->take(3)->get();
+        $sideprojects = Project::orderBy('date', 'desc')->take(5)->get();
 
         return view('projects', compact('projects', 'categories', 'sideprojects'));
     }

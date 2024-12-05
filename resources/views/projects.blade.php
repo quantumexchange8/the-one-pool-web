@@ -101,7 +101,7 @@
                         <div class="service-list">
                             <ul>
                                 @foreach($sideprojects as $project)
-                                    <li><a href="{{ route('project.details', ['id' => $project->id]) }}"><span>{{ $project->category }}: {{ $project->client}}</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+                                    <li><a href="{{ route('project.details', ['id' => $project->id]) }}"><span  style="line-height: normal;">{{ $project->category }}: {{ $project->client}}</span> <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
                                 @endforeach
                             </ul>
                         </div>

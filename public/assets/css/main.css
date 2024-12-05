@@ -14232,7 +14232,7 @@ body.homepage1-body, html {
 }
 
 .footer-area {
-  gap: 120px;
+  gap: 50px;
 }
 @media (max-width: 767px) {
   .footer-area {
@@ -14243,13 +14243,20 @@ body.homepage1-body, html {
 .footer-section {
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 130px;
+}
+@media (max-width: 767px) {
+  .footer-section {
+    display: flex;
+    justify-content: start;
+    width: 130px;
+  }
 }
 
 .footer-section2 {
   display: flex;
   justify-content: center;
-  width: 180px;
+  width: 270px;
 }
 
 .mision-img {

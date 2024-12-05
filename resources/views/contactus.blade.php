@@ -44,42 +44,45 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                <div class="contact-boxarea">
-                    <div class="img1">
-                        <img src="assets/img/icons/call-icon4.svg" alt="">
+                    <div class="contact-boxarea">
+                        <div class="img1">
+                            <img src="assets/img/icons/call-icon4.svg" alt="">
+                        </div>
+                        <div class="space32"></div>
+                        <h4>Contact Us</h4>
+                        <div class="space32"></div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="space32"></div>
+                        <a> 
+                            <a href="tel:+60126370800">+60126370800</a>
+                            <br class="d-lg-block d-none"> 
+                            <a href="tel:+60162243443">+60162243443</a>
+                        </a>
                     </div>
-                    <div class="space32"></div>
-                    <h4>Contact Us</h4>
-                    <div class="space32"></div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="space32"></div>
-                    <a>+60126370800 /
-                        <br class="d-lg-block d-none"> +60162243443</a>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="contact-boxarea">
-                    <div class="img1">
-                        <img src="assets/img/icons/email-icon2.svg" alt="">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-boxarea">
+                        <div class="img1">
+                            <img src="assets/img/icons/email-icon2.svg" alt="">
+                        </div>
+                        <div class="space32"></div>
+                        <h4>Email Us</h4>
+                        <div class="space32"></div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="space32"></div>
+                        <a>enquiry@theonepool.com.my</a>
+                        <div style="margin-bottom: 28px;"></div>
                     </div>
-                    <div class="space32"></div>
-                    <h4>Email Us</h4>
-                    <div class="space32"></div>
-                    <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    </ul>
-                    <div class="space32"></div>
-                    <a>theonepool@gmail.com</a>
-                    <div style="margin-bottom: 28px;"></div>
                 </div>
-            </div>
             </div>
         </div>
     </div>

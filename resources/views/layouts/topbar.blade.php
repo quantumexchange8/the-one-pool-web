@@ -19,8 +19,15 @@
               <div class="top-author-area">
                 <ul>
                   <li><a style="text-align: left;"><i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR </a></li>
-                  <li><a><img src="{{ asset('assets/img/icons/time.svg') }}" alt=""> Tuesday - Saturday <br>8:00 am - 5:00 pm </a></li>
-                  <li><a class="m-0"><i class="fa-solid fa-phone"></i> Call Now: +60126370800 / +60162243443 </a></li>
+                  <li>
+                    <a class="m-0">
+                      <i class="fa-solid fa-phone"></i> 
+                      <a class="m-0">Call Now: </a>
+                      <a href="tel:+60126370800" class="m-0">+60126370800</a> 
+                      <a class="m-0">/</a>
+                      <a href="tel:+60162243443" class="m-0">+60162243443</a> 
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
