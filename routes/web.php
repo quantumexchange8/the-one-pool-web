@@ -11,7 +11,7 @@ use App\Http\Controllers\AdminController;
 
 // Home Page
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::post('/', [HomeController::class, 'index'])->name('home.submit');
+Route::post('/', [HomeController::class, 'submit'])->name('home.submit');
 
 // About Us
 Route::get('/aboutus', function () {
