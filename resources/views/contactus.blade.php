@@ -14,7 +14,7 @@
                 <div class="col-lg-4 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>Contacts Us</h1>
-                        <a href="/">Home <i class="fa-solid fa-angle-right"></i></a> <a><span>Contacts Us</span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i></a> <a><span>Contacts Us</span></a>
                     </div>
                 </div>
             </div>
@@ -76,8 +76,8 @@
                     <li></li>
                     </ul>
                     <div class="space32"></div>
-                    <a>theonepool@gmail.com
-                    <br class="d-lg-block d-none"> theonepool.com</a>
+                    <a>theonepool@gmail.com</a>
+                    <div style="margin-bottom: 28px;"></div>
                 </div>
             </div>
             </div>

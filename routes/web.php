@@ -16,7 +16,7 @@ Route::post('/', [HomeController::class, 'index'])->name('home.submit');
 // About Us
 Route::get('/aboutus', function () {
     return view('about');
-});
+})->name('aboutus');
 
 // Contact Us
 Route::get('/contactus', function () {

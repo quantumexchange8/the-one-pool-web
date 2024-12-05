@@ -86,7 +86,7 @@
                             <img src="assets/img/icons/about-icon7.svg" alt="">
                         </div>
                         <div class="space24"></div>
-                        <a href="/servicedetail">Custom Pool Design</a>
+                        <a>Swimming Pool Design & Build Service</a>
                         <div class="space16"></div>
                         <p>We bring your vision to life with personalized pool designs tailored to your preferences, space, and budget.</p>
                     </div>
@@ -98,7 +98,7 @@
                             <img src="assets/img/icons/about-icon8.svg" alt="">
                         </div>
                         <div class="space24"></div>
-                        <a href="/servicedetail">Pool Construction</a>
+                        <a>Landscaping Works</a>
                         <div class="space16"></div>
                         <p>From excavation to finishing touches, we handle every step of the construction process with precision and care.</p>
                     </div>
@@ -110,9 +110,9 @@
                             <img src="assets/img/icons/about-icon9.svg" alt="">
                         </div>
                         <div class="space24"></div>
-                        <a href="/servicedetail">Renovation & Upgrades</a>
+                        <a>Pool Cleaning Service</a>
                         <div class="space16"></div>
-                        <p>Transform your existing pool into a modern masterpiece with our renovation and remodeling services.</p>
+                        <p>Keep your pool in pristine condition with our comprehensive pool cleaning services, ensuring a safe and clear every time.</p>
                     </div>
                 </div>
             </div>

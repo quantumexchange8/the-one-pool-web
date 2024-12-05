@@ -38,8 +38,8 @@
                                         </div>
                                         <div class="content-area">
                                             <ul class="">
-                                                <li><a href="#" class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> {{ $project->location }} </a></li>
-                                                <li><a href="#" class="date"><i class="fa-regular fa-calendar"></i> {{ $project->date }} </a></li>
+                                                <li><a class="date" style="padding: 0;"><i class="fa-solid fa-location"></i> {{ $project->location }} </a></li>
+                                                <li><a class="date"><i class="fa-regular fa-calendar"></i> {{ $project->date }} </a></li>
                                             </ul>
                                             <div class="space16"></div>
                                             <a href="{{ route('project.details', ['id' => $project->id]) }}">{{ $project->category }}: {{ $project->client}}</a>

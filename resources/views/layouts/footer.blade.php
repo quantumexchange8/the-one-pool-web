@@ -52,7 +52,6 @@
       <div class="col-lg-12">
         <div class="copyright-area">
           <p>Copyright @2024 The One Pool. All Rights Reserved</p>
-          <p><a href="#">Terms & Conditions</a>  <span> | </span>  <a href="#">Privacy Policy</a></p>
         </div>
       </div>
     </div>

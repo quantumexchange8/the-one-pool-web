@@ -100,14 +100,14 @@
             </div>
           </div>
 
-          <div class="contact-info-single">
+          <!-- <div class="contact-info-single">
             <div class="contact-info-icon">
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="contact-info-text">
               <a href="mailto:info@example.com">theonepool.com</a>
             </div>
-          </div>
+          </div> -->
 
           <div class="single-footer">
             <h3>Our Location</h3>

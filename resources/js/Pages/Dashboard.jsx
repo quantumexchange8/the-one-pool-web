@@ -33,38 +33,38 @@ export default function Dashboard() {
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                         <div className="p-6 flex flex-col gap-5">
-                            <div className="text-gray-900 text-xl text-center">
+                            <div className="text-gray-900 text-base md:text-lg text-center">
                                 Welcome to the Administration Side. Select the action to be performed.
                             </div>
                             <div className="flex flex-col gap-4 border rounded-xl p-4">
-                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-lg'>
-                                    Number of Admin: {stats.admins}
+                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-base md:text-lg'>
+                                    Number of Admins: {stats.admins}
                                     <div className='flex justify-end'>
                                         <a
                                             href={route('admin.profile')}
-                                            className="w-auto border text-center text-lg rounded-xl p-3"
+                                            className="w-auto border text-white text-center text-base md:text-lg rounded-xl p-2 bg-blue-600 hover:bg-blue-500"
                                         >
-                                            Manage Admin
+                                            Manage Admins
                                         </a>
                                     </div>
                                 </div>
-                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-lg'>
+                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-base md:text-lg'>
                                     Number of Services: {stats.services}
                                     <div className='flex justify-end'>
                                         <a
                                             href={route('admin.service')}
-                                            className="w-auto border text-center text-lg rounded-xl p-3"
+                                            className="w-auto border text-white text-center text-base md:text-lg rounded-xl p-2 bg-blue-600 hover:bg-blue-500"
                                         >
                                             Manage Services
                                         </a>
                                     </div>
                                 </div>
-                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-lg'>
+                                <div className='flex flex-col gap-2 border rounded-xl p-4 text-base md:text-lg'>
                                     Number of Projects: {stats.projects}
                                     <div className='flex justify-end'>
                                         <a
-                                            href={route('admin.project')}
-                                            className="w-auto border text-center text-lg rounded-xl p-3"
+                                            href={route('admin.project')}  
+                                            className="w-auto border text-white text-center text-base md:text-lg rounded-xl p-2 bg-blue-600 hover:bg-blue-500"
                                         >
                                             Manage Projects
                                         </a>
