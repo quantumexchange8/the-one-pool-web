@@ -99,5 +99,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/uploadProjectImage', [AdminController::class, 'uploadProjectImage'])->name('admin.uploadProjectImage');
 });
 
+//Webmail
+Route::get('/webmail', function () {
+    return redirect()->away('http://218.208.91.162:2095');
+});
+
+//cPanel
+Route::get('/cpanel', function () {
+    return redirect()->away('http://218.208.91.162:2082');
+});
+
 // Auth Routes
 require __DIR__.'/auth.php';
