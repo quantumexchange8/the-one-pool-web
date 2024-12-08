@@ -19,16 +19,14 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot()
+    public function boot(): void
 	{
     	if (App::environment('production')) {
         	resolve(\Illuminate\Routing\UrlGenerator::class)->forceScheme('https');
         	$this->app['request']->server->set('HTTPS', true);
     	}
-    }
-    
-    public function boot(): void
-    {
+
         Vite::prefetch(concurrency: 3);
     }
+
 }
