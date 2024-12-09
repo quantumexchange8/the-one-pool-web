@@ -150,7 +150,7 @@ export default function UpdateService({ className, service, onServiceUpdated }) 
                     Edit
                 </EditButton>
                 
-                <Dialog header="Update New Service" visible={visible} style={{ width:'1536px'}} onHide={() => {if (!visible) return; setVisible(false);}}>
+                <Dialog header="Update Service" visible={visible} style={{ width:'1536px'}} onHide={() => {if (!visible) return; setVisible(false);}}>
                     <form onSubmit={handleUpdate}>
                         {/* Name*/}
                         <div>
@@ -226,7 +226,7 @@ export default function UpdateService({ className, service, onServiceUpdated }) 
                               {section.items.map((items, itemIndex) => (
                                 <div key={itemIndex} className="flex gap-2 mt-2 items-center">
                                   <TextInput
-                                    value={items.item} 
+                                    value={items.item}
                                     className="block w-full"
                                     onChange={(e) => updateDetailItem(sectionIndex, itemIndex, e.target.value)}
                                     placeholder="Detail Item"

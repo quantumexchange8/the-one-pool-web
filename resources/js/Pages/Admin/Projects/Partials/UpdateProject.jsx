@@ -71,7 +71,7 @@ export default function UpdateProject({ className, project, onProjectUpdated }) 
                     Edit
                 </EditButton>
                 
-                <Dialog header="Update New Project" visible={visible} style={{ width: '80vw' }} onHide={() => { setVisible(false); }}>
+                <Dialog header="Update Project" visible={visible} style={{ width: '80vw' }} onHide={() => { setVisible(false); }}>
                     <form onSubmit={handleUpdate} className="flex flex-col gap-4">
                         {/* Title */}
                         <div className="flex flex-col gap-1">
