@@ -38,13 +38,13 @@ export default function Dashboard() {
                             </div>
                             <div className="flex flex-col gap-4 border rounded-xl p-4">
                                 <div className='flex flex-col gap-2 border rounded-xl p-4 text-base md:text-lg'>
-                                    Number of Admins: {stats.admins}
+                                    Number of Projects: {stats.projects}
                                     <div className='flex justify-end'>
                                         <a
-                                            href={route('admin.profile')}
+                                            href={route('admin.project')}  
                                             className="w-auto border text-white text-center text-base md:text-lg rounded-xl p-2 bg-blue-600 hover:bg-blue-500"
                                         >
-                                            Manage Admins
+                                            Manage Projects
                                         </a>
                                     </div>
                                 </div>
@@ -60,13 +60,13 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                                 <div className='flex flex-col gap-2 border rounded-xl p-4 text-base md:text-lg'>
-                                    Number of Projects: {stats.projects}
+                                    Number of Admins: {stats.admins}
                                     <div className='flex justify-end'>
                                         <a
-                                            href={route('admin.project')}  
+                                            href={route('admin.profile')}
                                             className="w-auto border text-white text-center text-base md:text-lg rounded-xl p-2 bg-blue-600 hover:bg-blue-500"
                                         >
-                                            Manage Projects
+                                            Manage Admins
                                         </a>
                                     </div>
                                 </div>

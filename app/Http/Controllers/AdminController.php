@@ -380,16 +380,19 @@ class AdminController extends Controller
         if ($request->hasFile('images')) {
             $index = 1;
             foreach ($request->file('images') as $file) {
-                $filename = 'project' . $index;
-                $destinationPath = public_path('assets/img/projects/' . 'project' . $project->id);
+                $filename = 'project' . $index . '.' . $file->getClientOriginalExtension();
+                $destinationPath = public_path('assets/img/projects/project' . $project->id);
+                
                 if (!file_exists($destinationPath)) {
                     mkdir($destinationPath, 0755, true);
                 }
+
                 $file->move($destinationPath, $filename);
+
                 $project->images()->create([
                     'image_path' => 'assets/img/projects/project' . $project->id . '/' . $filename,
                 ]);
-                $index = $index + 1;
+                $index++;
             }
         }
         

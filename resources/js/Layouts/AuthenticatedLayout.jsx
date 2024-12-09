@@ -25,10 +25,10 @@ export default function AuthenticatedLayout({ header, children }) {
 
                             <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink
-                                    href={route('admin.profile')}
-                                    active={route().current('admin.profile')}
+                                    href={route('admin.project')}
+                                    active={route().current('admin.project')}
                                 >
-                                    Admin
+                                    Projects
                                 </NavLink>
                                 <NavLink
                                     href={route('admin.service')}
@@ -37,10 +37,10 @@ export default function AuthenticatedLayout({ header, children }) {
                                     Services
                                 </NavLink>
                                 <NavLink
-                                    href={route('admin.project')}
-                                    active={route().current('admin.project')}
+                                    href={route('admin.profile')}
+                                    active={route().current('admin.profile')}
                                 >
-                                    Projects
+                                    Admin
                                 </NavLink>
                             </div>
                         </div>
@@ -147,10 +147,10 @@ export default function AuthenticatedLayout({ header, children }) {
                             Dashboard
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            href={route('admin.profile')}
-                            active={route().current('admin.profile')}
+                            href={route('admin.project')}
+                            active={route().current('admin.project')}
                         >
-                            Admin
+                            Projects
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             href={route('admin.service')}
@@ -159,10 +159,10 @@ export default function AuthenticatedLayout({ header, children }) {
                             Services
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            href={route('admin.project')}
-                            active={route().current('admin.project')}
+                            href={route('admin.profile')}
+                            active={route().current('admin.profile')}
                         >
-                            Projects
+                            Admin
                         </ResponsiveNavLink>
                     </div>
 

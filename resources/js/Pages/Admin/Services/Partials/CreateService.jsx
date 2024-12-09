@@ -86,7 +86,6 @@ export default function CreateService({className, onServiceCreated}) {
             onFinish: () => {
                 reset();
                 setVisible(false);
-                alert('Service Created Successfull.')
                 if(onServiceCreated) {
                     onServiceCreated();
                 }

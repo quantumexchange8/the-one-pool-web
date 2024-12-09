@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('service_details', function (Blueprint $table) {
             $table->id();
             $table->smallInteger('section_id');
-            $table->string('details');
+            $table->string('item');
             $table->softDeletes();
             $table->timestamps();
         });
