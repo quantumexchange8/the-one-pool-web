@@ -48,7 +48,7 @@ export default function CreateProject({className, onProjectCreated}) {
                 reset();
                 document.getElementById('images').value = '';
     
-                alert('Create Project Successful.');
+                alert('Create Project Successfully.');
 
                 setVisible(false);
 

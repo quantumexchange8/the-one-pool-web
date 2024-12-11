@@ -23,7 +23,12 @@ export default function CreateAdmin(className) {
         e.preventDefault();
 
         post(route('admin.store_admin'), {
-            onFinish: () => reset(),
+            onSuccess: () => {
+                reset();
+            },
+            onError: () => {
+                alert('Fail to Create Admin.');
+            }
         });
     };
 

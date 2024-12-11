@@ -19,7 +19,7 @@ class ProjectsTableSeeder extends Seeder
             'description' => 'Designed and built a stunning, durable swimming pool tailored to the client’s vision. The project included premium materials, advanced features, and meticulous craftsmanship, completed on time and within budget.',
             'category' => 'Pool Construction',
             'location' => 'Shah Alam Expressway',
-            'client' => 'ABC Hotel',
+            'client' => 'Season Hotel',
             'date' => '2024-1-1',
         ]);
 

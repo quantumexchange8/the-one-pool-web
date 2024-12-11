@@ -83,7 +83,8 @@ export default function CreateService({className, onServiceCreated}) {
     const submit = (e) => {
         e.preventDefault();
         post(route('admin.store_service'), {
-            onFinish: () => {
+            onSuccess: () => {
+                alert('Service Created Successfully.');
                 reset();
                 setVisible(false);
                 if(onServiceCreated) {
@@ -91,7 +92,7 @@ export default function CreateService({className, onServiceCreated}) {
                 }
             },
             onError: () => {
-                alert('Fail To Create Service.')
+                alert('Fail To Create Service.');
             }
         });
     };    
