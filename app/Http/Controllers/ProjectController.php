@@ -40,8 +40,10 @@ class ProjectController extends Controller
     {
 
         $project = Project::with('images')->findOrFail($id);
-        Log::debug('response id ', $id);
-        Log::debug('response project ', $project);
+        $projects2 = Project::find($id);
+        // dd($project);
+        Log::debug('response id ', ['id' => $project]);
+        Log::debug('response project ', ['project', $projects2]);
 
         return view('projectdetail', compact('project'));
     }
