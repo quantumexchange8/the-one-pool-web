@@ -48,7 +48,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/aboutus">About Us</a></li>
                 <li><a href="/services">Services</a></li>
-                <li><a href="/projects">Projects</a></li>
+                <li><a href="/projects/projects">Projects</a></li>
               </ul>
             </div>
             <div class="btn-area">

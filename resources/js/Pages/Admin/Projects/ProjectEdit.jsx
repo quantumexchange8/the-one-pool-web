@@ -11,7 +11,7 @@ export default function ProjectEdit() {
 
     const fetchProjects = async () => {
         try {
-            const response = await axios.get('/projectlist');
+            const response = await axios.get('/getProjectListing');
             setProjects(response.data);
         } catch (error) {
             console.error('Error fetching projects:', error);

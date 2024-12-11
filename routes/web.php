@@ -32,7 +32,7 @@ Route::prefix('services')->group(function () {
 
 // Projects
 Route::prefix('projects')->group(function () {
-    Route::get('/', [ProjectController::class, 'index'])->name('projects');
+    Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
     Route::get('/detail/{id}', [ProjectController::class, 'show'])->name('project.details');
 });
 
@@ -84,9 +84,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     
 
     //Projects
-    Route::get('/project', [AdminController::class, 'project'])->name('admin.project');
+    Route::get('/projectListing', [AdminController::class, 'project'])->name('admin.project');
     //Retrive Project
-    Route::get('/projectlist', [AdminController::class, 'projectList'])->name('projectList');
+    Route::get('/getProjectListing', [AdminController::class, 'projectList'])->name('projectList');
     //Create Project
     Route::post('/storeProject', [AdminController::class, 'storeProject'])->name('admin.storeProject');
     //Delete Project

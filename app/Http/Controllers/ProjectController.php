@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ProjectController extends Controller
 {
@@ -37,7 +38,10 @@ class ProjectController extends Controller
 
     public function show($id)
     {
+
         $project = Project::with('images')->findOrFail($id);
+        Log::debug('response id ', $id);
+        Log::debug('response project ', $project);
 
         return view('projectdetail', compact('project'));
     }
