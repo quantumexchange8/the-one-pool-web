@@ -18,7 +18,11 @@
 
               <div class="top-author-area">
                 <ul>
-                  <li><a style="text-align: left;"><i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR </a></li>
+                  <li>
+                    <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A; text-align: left; color: white">
+                      <i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR 
+                    </a> 
+                  </li>
                   <li>
                     <a class="m-0">
                       <i class="fa-solid fa-phone"></i> 
@@ -90,7 +94,7 @@
       <li><a href="/" >Home </a></li>
       <li><a href="/aboutus">About Us</a></li>
       <li><a href="/services">Services</a></li>
-      <li><a href="/projects">Projects</a></li>
+      <li><a href="/projects/projects">Projects</a></li>
       <li><a href="/contactus">Contact Us</a></li>
     </ul>
     <div class="allmobilesection">
@@ -103,18 +107,11 @@
               <i class="fa-solid fa-phone-volume"></i>
             </div>
             <div class="contact-info-text">
-              <a>+60126370800 / +60162243443</a>
+              <a href="tel:+60126370800">+60126370800 </a>
+              <a style="margin: 0;"> / </a> 
+              <a href="tel:+60162243443" style="margin: 0;">+60162243443</a>
             </div>
           </div>
-
-          <!-- <div class="contact-info-single">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-info-text">
-              <a href="mailto:info@example.com">theonepool.com</a>
-            </div>
-          </div> -->
 
           <div class="single-footer">
             <h3>Our Location</h3>
@@ -124,7 +121,9 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div class="contact-info-text">
-                <a>NO 12 JALAN 2/24 TAMAN BUKIT RAWANG JAYA 48000 RAWANG SELANGOR</a>
+                <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A; text-align: left; color: white">
+                  NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR 
+                </a>
               </div>
             </div>
 

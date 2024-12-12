@@ -62,7 +62,7 @@ class ServicesTableSeeder extends Seeder
                     ],
                     'Water Quality Management:' => [
                         'Monitor and adjust pH, chlorine, and other chemical levels.',
-                        'Prevent buildup of harmful substances with regular treatment.',
+                        'Prevent build up of harmful substances with regular treatment.',
                     ],
                     'Preventive Measures:' => [
                         'Identify and resolve potential issues before they require major repairs.',

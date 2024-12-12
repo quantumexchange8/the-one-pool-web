@@ -13,7 +13,7 @@
                 <div class="col-lg-8 m-auto">
                     <div class="inner-page-header heading1 text-center">
                         <h1>{{ $project->category }}: {{ $project->client}}</h1>
-                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i></a> <a href="/projects"> Projects </a> <a><i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->category }}: {{ $project->client}} </span></a>
+                        <a href="/">Home</a> <a><i class="fa-solid fa-angle-right"></i></a> <a href="/projects/projects"> Projects </a> <a><i class="fa-solid fa-angle-right"></i></a> <a><span> {{ $project->category }}: {{ $project->client}} </span></a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                                 @endif
                             @endforeach
                         </div>
-                        <div v class="space42"></div>
+                        <div class="space42"></div>
                     </div>
                 </div>
             </div>

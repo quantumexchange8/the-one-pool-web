@@ -346,7 +346,6 @@ class AdminController extends Controller
             $project->load('images');
 
             $project->details = json_decode($project->details, true);
-            // dd($project);
         });
 
         return $projects;

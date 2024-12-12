@@ -24,7 +24,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/aboutus">About Us</a></li>
             <li><a href="/services">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
+            <li><a href="/projects/projects">Projects</a></li>
             <li><a href="/contactus">Contact Us</a></li>
           </ul>
         </div>
@@ -35,15 +35,19 @@
           <h3>Contact Info</h3>
           <ul>
             <p><b>Contact Number:</b> <br> <a href="tel:+60126370800" style="color: #5A5A5A;">+60126370800</a> <br> <a href="tel:+60162243443" style="color: #5A5A5A;">+60162243443</a> </p>
-            <p><b>Email:</b> <br>enquiry@theonepool.com.my</p>
+            <p><b>Email:</b> <br> <a href="mailto:enquiry@theonepool.com.my" style="color: #5A5A5A;">enquiry@theonepool.com.my</a> </p>
           </ul>
         </div>
       </div>
 
-      <div class="footer-section col-lg col-md-6">
+      <div class="col-lg col-md-6">
         <div class="footer-header">
           <h3>Location</h3>
-          <p>No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor</p>
+          <P>
+            <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A;">
+              No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor 
+            </a>  
+          </P>
         </div>
       </div>
     </div>

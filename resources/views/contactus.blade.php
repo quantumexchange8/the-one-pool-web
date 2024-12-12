@@ -39,7 +39,9 @@
                             <li></li>
                         </ul>
                         <div class="space32"></div>
-                        <a>No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor, Malaysia</a>
+                        <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A;">
+                            No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor 
+                        </a>
                     </div>
                 </div>
 
@@ -79,7 +81,7 @@
                             <li></li>
                         </ul>
                         <div class="space32"></div>
-                        <a>enquiry@theonepool.com.my</a>
+                        <a href="mailto:enquiry@theonepool.com.my">enquiry@theonepool.com.my</a>
                         <div style="margin-bottom: 28px;"></div>
                     </div>
                 </div>

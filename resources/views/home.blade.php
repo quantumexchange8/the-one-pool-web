@@ -315,7 +315,7 @@
                         <p data-aos="fade-right" data-aos-duration="1000">Discover the craftsmanship behind our stunning pool designs. Each project showcases our commitment to quality, precision, and innovation.</p>
                         <div class="space24"></div>
                         <div class="btn-area1">
-                            <a href="/projects" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View Project Details </a>
+                            <a href="/projects/projects" class="header-btn1"><img src="assets/img/icons/logo-icon1.svg" alt=""> View Project Details </a>
                         </div>
                     </div>
                 </div>
