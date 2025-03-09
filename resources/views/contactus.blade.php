@@ -39,8 +39,10 @@
                             <li></li>
                         </ul>
                         <div class="space32"></div>
-                        <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A;">
-                            No 12 Jalan 2/24 Taman Bukit Rawang Jaya 48000 Rawang Selangor 
+                        <a href="https://www.google.com/maps/@3.3228865,101.5819207,19.33z?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #5A5A5A;">
+                            NO.31 & 31A JALAN RAWANG PUTRA 6,<br/>
+TAMAN BUKIT RAWANG PUTRA,<br/>
+48000 RAWANG, SELANGOR D.E. 
                         </a>
                     </div>
                 </div>
