@@ -19,8 +19,8 @@
               <div class="top-author-area">
                 <ul>
                   <li>
-                    <a href="https://www.google.com/maps?q=No+12+Jalan+2/24+Taman+Bukit+Rawang+Jaya+48000+Rawang+Selangor" target="_blank" style="color: #5A5A5A; text-align: left; color: white">
-                      <i class="fa-solid fa-location-dot"></i> NO 12 JALAN 2/24 TAMAN BUKIT RAWANG <br>JAYA 48000 RAWANG SELANGOR 
+                    <a href="https://www.google.com/maps/@3.3228865,101.5819207,19.33z?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #5A5A5A; text-align: left; color: white">
+                      <i class="fa-solid fa-location-dot"></i> NO.31 & 31A JALAN RAWANG PUTRA 6 <br>TAMAN BUKIT RAWANG PUTRA, 48000 RAWANG, SELANGOR.
                     </a> 
                   </li>
                   <li>
